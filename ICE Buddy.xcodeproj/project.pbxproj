@@ -14,6 +14,18 @@
 		51444B86274426AF00AD2C68 /* ICE_BuddyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51444B85274426AF00AD2C68 /* ICE_BuddyTests.swift */; };
 		51444B90274426AF00AD2C68 /* ICE_BuddyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51444B8F274426AF00AD2C68 /* ICE_BuddyUITests.swift */; };
 		51444B92274426AF00AD2C68 /* ICE_BuddyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51444B91274426AF00AD2C68 /* ICE_BuddyUITestsLaunchTests.swift */; };
+		51444BA02744271400AD2C68 /* MenuBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51444B9F2744271400AD2C68 /* MenuBarController.swift */; };
+		51444BA3274429B900AD2C68 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 51444BA2274429B900AD2C68 /* Alamofire */; };
+		51444BA527442A6700AD2C68 /* ICEConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51444BA427442A6700AD2C68 /* ICEConnection.swift */; };
+		51444BA8274438BE00AD2C68 /* ICEHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51444BA6274438BE00AD2C68 /* ICEHeader.swift */; };
+		51444BA9274438BE00AD2C68 /* ICEHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51444BA7274438BE00AD2C68 /* ICEHeader.xib */; };
+		51444BAC2744423300AD2C68 /* JourneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51444BAA2744423300AD2C68 /* JourneyViewController.swift */; };
+		51444BAD2744423300AD2C68 /* JourneyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51444BAB2744423300AD2C68 /* JourneyViewController.xib */; };
+		51444BB02744427900AD2C68 /* JourneyStopCollectionViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51444BAE2744427900AD2C68 /* JourneyStopCollectionViewItem.swift */; };
+		51444BB12744427900AD2C68 /* JourneyStopCollectionViewItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51444BAF2744427900AD2C68 /* JourneyStopCollectionViewItem.xib */; };
+		51444BB42744546A00AD2C68 /* FredKit in Frameworks */ = {isa = PBXBuildFile; productRef = 51444BB32744546A00AD2C68 /* FredKit */; };
+		51444BB62744F3CE00AD2C68 /* status.json in Resources */ = {isa = PBXBuildFile; fileRef = 51444BB52744F3CE00AD2C68 /* status.json */; };
+		51444BB82744F3E900AD2C68 /* tripInfo.json in Resources */ = {isa = PBXBuildFile; fileRef = 51444BB72744F3E900AD2C68 /* tripInfo.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +57,17 @@
 		51444B8B274426AF00AD2C68 /* ICE BuddyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ICE BuddyUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		51444B8F274426AF00AD2C68 /* ICE_BuddyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICE_BuddyUITests.swift; sourceTree = "<group>"; };
 		51444B91274426AF00AD2C68 /* ICE_BuddyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICE_BuddyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		51444B9E274426CD00AD2C68 /* ICE-Buddy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "ICE-Buddy-Info.plist"; sourceTree = SOURCE_ROOT; };
+		51444B9F2744271400AD2C68 /* MenuBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarController.swift; sourceTree = "<group>"; };
+		51444BA427442A6700AD2C68 /* ICEConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICEConnection.swift; sourceTree = "<group>"; };
+		51444BA6274438BE00AD2C68 /* ICEHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICEHeader.swift; sourceTree = "<group>"; };
+		51444BA7274438BE00AD2C68 /* ICEHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ICEHeader.xib; sourceTree = "<group>"; };
+		51444BAA2744423300AD2C68 /* JourneyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyViewController.swift; sourceTree = "<group>"; };
+		51444BAB2744423300AD2C68 /* JourneyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JourneyViewController.xib; sourceTree = "<group>"; };
+		51444BAE2744427900AD2C68 /* JourneyStopCollectionViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyStopCollectionViewItem.swift; sourceTree = "<group>"; };
+		51444BAF2744427900AD2C68 /* JourneyStopCollectionViewItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JourneyStopCollectionViewItem.xib; sourceTree = "<group>"; };
+		51444BB52744F3CE00AD2C68 /* status.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = status.json; sourceTree = "<group>"; };
+		51444BB72744F3E900AD2C68 /* tripInfo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tripInfo.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +75,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51444BB42744546A00AD2C68 /* FredKit in Frameworks */,
+				51444BA3274429B900AD2C68 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,8 +120,19 @@
 		51444B72274426AE00AD2C68 /* ICE Buddy */ = {
 			isa = PBXGroup;
 			children = (
+				51444B9E274426CD00AD2C68 /* ICE-Buddy-Info.plist */,
 				51444B73274426AE00AD2C68 /* AppDelegate.swift */,
+				51444BB52744F3CE00AD2C68 /* status.json */,
+				51444BB72744F3E900AD2C68 /* tripInfo.json */,
 				51444B75274426AE00AD2C68 /* ViewController.swift */,
+				51444B9F2744271400AD2C68 /* MenuBarController.swift */,
+				51444BA6274438BE00AD2C68 /* ICEHeader.swift */,
+				51444BA7274438BE00AD2C68 /* ICEHeader.xib */,
+				51444BAA2744423300AD2C68 /* JourneyViewController.swift */,
+				51444BAB2744423300AD2C68 /* JourneyViewController.xib */,
+				51444BAE2744427900AD2C68 /* JourneyStopCollectionViewItem.swift */,
+				51444BAF2744427900AD2C68 /* JourneyStopCollectionViewItem.xib */,
+				51444BA427442A6700AD2C68 /* ICEConnection.swift */,
 				51444B77274426AF00AD2C68 /* Assets.xcassets */,
 				51444B79274426AF00AD2C68 /* Main.storyboard */,
 				51444B7C274426AF00AD2C68 /* ICE_Buddy.entitlements */,
@@ -137,6 +173,10 @@
 			dependencies = (
 			);
 			name = "ICE Buddy";
+			packageProductDependencies = (
+				51444BA2274429B900AD2C68 /* Alamofire */,
+				51444BB32744546A00AD2C68 /* FredKit */,
+			);
 			productName = "ICE Buddy";
 			productReference = 51444B70274426AE00AD2C68 /* ICE Buddy.app */;
 			productType = "com.apple.product-type.application";
@@ -209,6 +249,10 @@
 				Base,
 			);
 			mainGroup = 51444B67274426AE00AD2C68;
+			packageReferences = (
+				51444BA1274429B900AD2C68 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				51444BB22744546A00AD2C68 /* XCRemoteSwiftPackageReference "FredKit" */,
+			);
 			productRefGroup = 51444B71274426AE00AD2C68 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -226,7 +270,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				51444B78274426AF00AD2C68 /* Assets.xcassets in Resources */,
+				51444BAD2744423300AD2C68 /* JourneyViewController.xib in Resources */,
+				51444BA9274438BE00AD2C68 /* ICEHeader.xib in Resources */,
 				51444B7B274426AF00AD2C68 /* Main.storyboard in Resources */,
+				51444BB12744427900AD2C68 /* JourneyStopCollectionViewItem.xib in Resources */,
+				51444BB62744F3CE00AD2C68 /* status.json in Resources */,
+				51444BB82744F3E900AD2C68 /* tripInfo.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,7 +301,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				51444B76274426AE00AD2C68 /* ViewController.swift in Sources */,
+				51444BA02744271400AD2C68 /* MenuBarController.swift in Sources */,
 				51444B74274426AE00AD2C68 /* AppDelegate.swift in Sources */,
+				51444BA8274438BE00AD2C68 /* ICEHeader.swift in Sources */,
+				51444BB02744427900AD2C68 /* JourneyStopCollectionViewItem.swift in Sources */,
+				51444BA527442A6700AD2C68 /* ICEConnection.swift in Sources */,
+				51444BAC2744423300AD2C68 /* JourneyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +481,7 @@
 				DEVELOPMENT_TEAM = CS5SL7ZTHZ;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ICE-Buddy-Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -454,6 +509,7 @@
 				DEVELOPMENT_TEAM = CS5SL7ZTHZ;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ICE-Buddy-Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -605,6 +661,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		51444BA1274429B900AD2C68 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		51444BB22744546A00AD2C68 /* XCRemoteSwiftPackageReference "FredKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/frogg/FredKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		51444BA2274429B900AD2C68 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 51444BA1274429B900AD2C68 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		51444BB32744546A00AD2C68 /* FredKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 51444BB22744546A00AD2C68 /* XCRemoteSwiftPackageReference "FredKit" */;
+			productName = FredKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 51444B68274426AE00AD2C68 /* Project object */;
 }

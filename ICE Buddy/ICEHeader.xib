@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="19455" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="19455"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="ICEHeader" customModule="ICE_Buddy" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView misplaced="YES" id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="401" height="104"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AvX-xI-dlp">
+                    <rect key="frame" x="12" y="12" width="3245" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="vbI-7x-V5U"/>
+                    </constraints>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ice 2" id="ZaI-N5-ZCT"/>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="AvX-xI-dlp" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="F82-dW-CYx"/>
+                <constraint firstAttribute="bottom" secondItem="AvX-xI-dlp" secondAttribute="bottom" constant="12" id="gek-zs-EZa"/>
+                <constraint firstAttribute="trailing" secondItem="AvX-xI-dlp" secondAttribute="trailing" id="lek-Un-yg8"/>
+                <constraint firstItem="AvX-xI-dlp" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="12" id="wGe-bF-0FZ"/>
+            </constraints>
+            <point key="canvasLocation" x="228.5" y="138"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="ice 2" width="3245" height="469"/>
+    </resources>
+</document>
