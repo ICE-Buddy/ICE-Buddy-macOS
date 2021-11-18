@@ -9,6 +9,7 @@ import Foundation
 import Alamofire
 import CoreLocation
 import FredKit
+import AppKit
 
 enum InternetConnection {
     case high, unstable
@@ -42,7 +43,7 @@ enum TrainType {
         return [Int](9001...9999)
     }
     
-    static func trainType(from triebZugNummer: String) -> TrainType {
+    public static func trainType(from triebZugNummer: String) -> TrainType {
         if ice1Numbers.contains(triebzugnummer: triebZugNummer) {
             return .ice1
         }
@@ -77,6 +78,21 @@ enum TrainType {
         }
     }
     
+    var trainIcon: NSImage {
+        switch self {
+        case .ice1:
+            return NSImage(named: "ice 1")!
+        case .ice2:
+            return NSImage(named: "ice 2")!
+        case .ice3:
+            return NSImage(named: "ice 3")!
+        case .ice4:
+            return NSImage(named: "ice 4")!
+        case .unknown:
+            return NSImage(named: "ice 1")!
+        }
+    }
+    
     //    var icon: String {
     //
     //    }
@@ -87,6 +103,7 @@ struct ICEMetaData {
     let internetConnection: InternetConnection
     let trainType: TrainType
     let currentLocation: CLLocationCoordinate2D
+    let timestamp: Date
     
     init?(dict: [String: Any]) {
         
@@ -118,6 +135,12 @@ struct ICEMetaData {
         } else {
             return nil
         }
+        
+        if let serverTime = dict["serverTime"] as? Double {
+            self.timestamp = Date(timeIntervalSince1970: serverTime / 1000)
+        } else {
+            return nil
+        }
     }
 }
 
@@ -139,12 +162,21 @@ struct Stop {
     
     var humanReadableArrivalTime: String {
         if let actualArrivalTime = actualArrivalTime {
-            return actualArrivalTime.shortTimeString
+            return actualArrivalTime.minuteTimeString
         }
         
         if let scheduledArrivalTime = scheduledArrivalTime {
-            return scheduledArrivalTime.shortTimeString
+            return scheduledArrivalTime.minuteTimeString
         }
+        
+        if let actualDepartureTime = actualDepartureTime {
+            return actualDepartureTime.minuteTimeString
+        }
+        
+        if let scheduledDepartureTime = scheduledDepartureTime {
+            return scheduledDepartureTime.minuteTimeString
+        }
+        
         
         return "Time Unknown"
     }
@@ -310,7 +342,14 @@ class ICEConnection {
                 completion(metaData)
             } else {
 #if DEBUG
-                if let data = try? Data(contentsOf: Bundle.main.url(forResource: "tripInfo", withExtension: "json")!) {
+                let random = Int.random(in: 1...1)
+                
+                if random == 2 {
+                    completion(nil)
+                    return
+                }
+                
+                if let data = try? Data(contentsOf: Bundle.main.url(forResource: "tripInfo\(random)", withExtension: "json")!) {
                     let jsonResult = try? JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
                     if let jsonResult = jsonResult as? [String: Any] {
                         let metaData = TrainTripData(dict: jsonResult)

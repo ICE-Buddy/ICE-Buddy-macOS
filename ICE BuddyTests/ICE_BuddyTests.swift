@@ -18,9 +18,12 @@ class ICE_BuddyTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testTriebzugNummern() throws {
+        let tz240 = TrainType.trainType(from: "Tz240")
+        XCTAssertEqual(tz240, .ice2)
+        
+        let tz9453 = TrainType.trainType(from: "Tz9453")
+        XCTAssertEqual(tz9453, .ice4)
     }
 
     func testPerformanceExample() throws {

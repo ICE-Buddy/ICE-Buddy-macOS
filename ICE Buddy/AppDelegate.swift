@@ -6,6 +6,7 @@
 //
 
 import Cocoa
+import FredKitAnalytics
 
 @main
 class AppDelegate: NSObject, NSApplicationDelegate {
@@ -15,7 +16,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
-        
+        FredKitAnalytics.setup(appId: "7")
         MenuBarController.shared.refreshMenuBarItem()
     }
 
