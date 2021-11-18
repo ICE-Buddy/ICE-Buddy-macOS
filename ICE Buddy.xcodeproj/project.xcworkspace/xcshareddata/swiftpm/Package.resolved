@@ -1,0 +1,43 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Alamofire",
+        "repositoryURL": "https://github.com/Alamofire/Alamofire",
+        "state": {
+          "branch": null,
+          "revision": "d120af1e8638c7da36c8481fd61a66c0c08dc4fc",
+          "version": "5.4.4"
+        }
+      },
+      {
+        "package": "FredKitAnalytics",
+        "repositoryURL": "https://github.com/frogg/FredKitAnalytics.git",
+        "state": {
+          "branch": "master",
+          "revision": "8d2260ac1ea87d5f433abbeb397070198c3986fe",
+          "version": null
+        }
+      },
+      {
+        "package": "LaunchAtLogin",
+        "repositoryURL": "https://github.com/sindresorhus/LaunchAtLogin",
+        "state": {
+          "branch": null,
+          "revision": "e8171b3e38a2816f579f58f3dac1522aa39efe41",
+          "version": "4.2.0"
+        }
+      },
+      {
+        "package": "MatomoTracker",
+        "repositoryURL": "https://github.com/matomo-org/matomo-sdk-ios.git",
+        "state": {
+          "branch": null,
+          "revision": "8abf0b655d4d3a937f96b8a6e0b66e21cb6b312d",
+          "version": "7.4.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
