@@ -1,61 +1,61 @@
 {
   "images" : [
     {
-      "filename" : "app icon ice buddy-16.png",
+      "filename" : "icon ice buddy-16.png",
       "idiom" : "mac",
       "scale" : "1x",
       "size" : "16x16"
     },
     {
-      "filename" : "app icon ice buddy-32.png",
+      "filename" : "icon ice buddy-32.png",
       "idiom" : "mac",
       "scale" : "2x",
       "size" : "16x16"
     },
     {
-      "filename" : "app icon ice buddy-32.png",
+      "filename" : "icon ice buddy-32.png",
       "idiom" : "mac",
       "scale" : "1x",
       "size" : "32x32"
     },
     {
-      "filename" : "app icon ice buddy-64.png",
+      "filename" : "icon ice buddy-64.png",
       "idiom" : "mac",
       "scale" : "2x",
       "size" : "32x32"
     },
     {
-      "filename" : "app icon ice buddy-128.png",
+      "filename" : "icon ice buddy-128.png",
       "idiom" : "mac",
       "scale" : "1x",
       "size" : "128x128"
     },
     {
-      "filename" : "app icon ice buddy-256.png",
+      "filename" : "icon ice buddy-256.png",
       "idiom" : "mac",
       "scale" : "2x",
       "size" : "128x128"
     },
     {
-      "filename" : "app icon ice buddy-256.png",
+      "filename" : "icon ice buddy-256.png",
       "idiom" : "mac",
       "scale" : "1x",
       "size" : "256x256"
     },
     {
-      "filename" : "app icon ice buddy-512.png",
+      "filename" : "icon ice buddy-512.png",
       "idiom" : "mac",
       "scale" : "2x",
       "size" : "256x256"
     },
     {
-      "filename" : "app icon ice buddy-512.png",
+      "filename" : "icon ice buddy-512.png",
       "idiom" : "mac",
       "scale" : "1x",
       "size" : "512x512"
     },
     {
-      "filename" : "app icon ice buddy-1024.png",
+      "filename" : "icon ice buddy-1024.png",
       "idiom" : "mac",
       "scale" : "2x",
       "size" : "512x512"

@@ -8,6 +8,7 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="ICEHeader" customModule="ICE_Buddy" customModuleProvider="target">
             <connections>
+                <outlet property="imageView" destination="AvX-xI-dlp" id="KRY-gl-1XP"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
             </connections>
         </customObject>
@@ -22,7 +23,7 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="vbI-7x-V5U"/>
                     </constraints>
-                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ice 2" id="ZaI-N5-ZCT"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="BR412" id="ZaI-N5-ZCT"/>
                 </imageView>
             </subviews>
             <constraints>
@@ -35,6 +36,6 @@
         </customView>
     </objects>
     <resources>
-        <image name="ice 2" width="3245" height="469"/>
+        <image name="BR412" width="3257" height="383"/>
     </resources>
 </document>

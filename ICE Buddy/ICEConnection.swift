@@ -22,80 +22,85 @@ enum InternetConnection {
     }
 }
 
-enum TrainType {
+enum TrainType: CaseIterable {
     
-    case ice1, ice2, ice3, ice4, unknown
+    case BR401, BR402, BR403, BR406, BR407, BR408, BR411, BR415, BR412, unknown
     
-    // tz 101 to tz 190
-    private static var ice1Numbers: [Int] {
-        return [Int](101...199)
-    }
-    
-    private static var ice2Numbers: [Int] {
-        return [Int](201...299)
-    }
-    
-    private static var ice3Numbers: [Int] {
-        return [Int](301...399) + [Int](701...799) + [Int](4601...4699)
-    }
-    
-    private static var ice4Numbers: [Int] {
-        return [Int](9001...9999)
-    }
-    
-    public static func trainType(from triebZugNummer: String) -> TrainType {
-        if ice1Numbers.contains(triebzugnummer: triebZugNummer) {
-            return .ice1
+    private var triebZugNummern: [Int] {
+        switch self {
+        case .BR401:
+            return [Int](101...199)
+        case .BR402:
+            return [Int](201...299)
+        case .BR403:
+            return [Int](301...399)
+        case .BR406:
+            return [Int](4601...4699)
+        case .BR407:
+            return [Int](701...799) + [Int](4701...4799)
+        case .BR408:
+            return [Int](801...899)
+        case .BR411:
+            return [Int](1101...1199)
+        case .BR415:
+            return [Int](1501...1599)
+        case .BR412:
+            return [Int](9001...9999)
+        case .unknown:
+            return []
         }
-        
-        if ice2Numbers.contains(triebzugnummer: triebZugNummer) {
-            return .ice2
-        }
-        
-        if ice3Numbers.contains(triebzugnummer: triebZugNummer) {
-            return .ice3
-        }
-        
-        if ice4Numbers.contains(triebzugnummer: triebZugNummer) {
-            return .ice4
-        }
-        
-        return .unknown
     }
     
     var humanReadableTrainType: String {
         switch self {
-        case .ice1:
+        case .BR401:
             return "ICE 1"
-        case .ice2:
+        case .BR402:
             return "ICE 2"
-        case .ice3:
+        case .BR403, .BR406, .BR407:
             return "ICE 3"
-        case .ice4:
+        case .BR408:
+            return "ICE 3 Neo"
+        case .BR411, .BR415:
+            return "ICE T"
+        case .BR412:
             return "ICE 4"
         case .unknown:
             return "Unknown Train Type"
         }
     }
     
-    var trainIcon: NSImage {
-        switch self {
-        case .ice1:
-            return NSImage(named: "ice 1")!
-        case .ice2:
-            return NSImage(named: "ice 2")!
-        case .ice3:
-            return NSImage(named: "ice 3")!
-        case .ice4:
-            return NSImage(named: "ice 4")!
-        case .unknown:
-            return NSImage(named: "ice 1")!
-        }
+    
+    public static func trainType(from triebZugNummer: String) -> TrainType {
+        return TrainType.allCases.first { trainType in
+            trainType.triebZugNummern.contains(triebzugnummer: triebZugNummer)
+        } ?? .unknown
     }
     
-    //    var icon: String {
-    //
-    //    }
+    var trainIcon: NSImage {
+        switch self {
+        case .BR401:
+            return NSImage(named: "BR401")!
+        case .BR402:
+            return NSImage(named: "BR402")!
+        case .BR403:
+            return NSImage(named: "BR403")!
+        case .BR406:
+            return NSImage(named: "BR406")!
+        case .BR407:
+            return NSImage(named: "BR407")!
+        case .BR408:
+            return NSImage(named: "BR408")!
+        case .BR411:
+            return NSImage(named: "BR411")!
+        case .BR415:
+            return NSImage(named: "BR415")!
+        case .BR412:
+            return NSImage(named: "BR412")!
+        case .unknown:
+            return NSImage(named: "BR401")!
+        }
+    }
 }
 
 struct ICEMetaData {

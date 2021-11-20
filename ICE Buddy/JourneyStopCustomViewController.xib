@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="19455" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
+        <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="19455"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -48,7 +49,7 @@
                     <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="stop_badge" id="Jiy-yf-mFL"/>
                 </imageView>
                 <stackView distribution="fill" orientation="horizontal" alignment="top" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EeZ-0x-y4a">
-                    <rect key="frame" x="189" y="8" width="124" height="16"/>
+                    <rect key="frame" x="184" y="8" width="129" height="16"/>
                     <subviews>
                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ARd-fJ-jiR">
                             <rect key="frame" x="-2" y="0.0" width="39" height="16"/>
@@ -67,11 +68,11 @@
                             </textFieldCell>
                         </textField>
                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="mfo-hb-yTJ">
-                            <rect key="frame" x="72" y="0.0" width="54" height="16"/>
+                            <rect key="frame" x="72" y="0.0" width="59" height="16"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="50" id="efD-M9-fBU"/>
+                                <constraint firstAttribute="width" constant="55" id="efD-M9-fBU"/>
                             </constraints>
-                            <textFieldCell key="cell" lineBreakMode="clipping" alignment="right" title="Gleis 2" id="Zxn-3H-cny">
+                            <textFieldCell key="cell" lineBreakMode="clipping" alignment="right" title="Gleis 222" id="Zxn-3H-cny">
                                 <font key="font" metaFont="system"/>
                                 <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>

@@ -65,6 +65,8 @@ class MenuBarController: NSObject {
         quitMenuItem.action = #selector(quitApp)
         quitMenuItem.target = self
         
+        iceHeaderMenuItem.view = iceHeaderVC.view
+        
         self.refreshMenuBarMenu()
     }
     
@@ -90,13 +92,14 @@ class MenuBarController: NSObject {
                                 launchIdentifiers: nil)
     }
     
+    let iceHeaderVC = ICEHeader()
     private func refreshMenuBarMenu() {
         
         menu.removeAllItems()
         self.journeyViewControllers.removeAll()
         
-        let iceHeaderVC = ICEHeader()
-        iceHeaderMenuItem.view = iceHeaderVC.view
+        
+        
         
         menu.delegate = self
         iceStatusItem?.menu = menu;
@@ -153,7 +156,7 @@ class MenuBarController: NSObject {
         disconnectedMenu.removeAllItems()
         disconnectedMenu.delegate = self
         disconnectedMenu.addItem(disconnectedMenuItem)
-        disconnectedMenu.addItem(openLoginMenuItem)
+//        disconnectedMenu.addItem(openLoginMenuItem)
         self.disconnectedMenu.addItem(NSMenuItem.separator())
         self.disconnectedMenu.addItem(disconnectedAboutMenuItem)
         self.disconnectedMenu.addItem(disconnectedLaunchAtLoginMenuItem)
@@ -198,9 +201,12 @@ class MenuBarController: NSObject {
 #endif
             
             if let metaData = metaData {
-                self.currentSpeedMenuItem.title = "\(Int(metaData.speed)) km/h"
+                let speed = Measurement(value: metaData.speed, unit: UnitSpeed.kilometersPerHour)
+                let formatter = MeasurementFormatter()
+                self.currentSpeedMenuItem.title = formatter.string(from: speed)
                 self.trainTypeMenuItem.title = "Train Model: \(metaData.trainType.humanReadableTrainType)"
                 self.lastUpdateMenuitem.title = "Updated Infos: \(metaData.timestamp.humanReadableDateAndTimeString)"
+                self.iceHeaderVC.imageView.image = metaData.trainType.trainIcon
                 self.iceStatusItem?.menu = self.menu
             } else {
                 self.showDisconnectedMenu()
