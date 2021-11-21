@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="19455" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="19455"/>
+        <plugIn identifier="com.apple.MapKitIBPlugin" version="19455"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="JourneyMapViewController" customModule="ICE_Buddy" customModuleProvider="target">
+            <connections>
+                <outlet property="mapView" destination="imU-2K-jn7" id="weO-kW-yoJ"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <mapView mapType="standard" showsPointsOfInterest="NO" translatesAutoresizingMaskIntoConstraints="NO" id="imU-2K-jn7">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+                </mapView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="imU-2K-jn7" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="8NO-lQ-itm"/>
+                <constraint firstItem="imU-2K-jn7" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="98q-Ag-hIC"/>
+                <constraint firstAttribute="trailing" secondItem="imU-2K-jn7" secondAttribute="trailing" id="Lnj-0c-UtL"/>
+                <constraint firstAttribute="bottom" secondItem="imU-2K-jn7" secondAttribute="bottom" id="a75-dA-CFD"/>
+            </constraints>
+            <point key="canvasLocation" x="140" y="154"/>
+        </customView>
+    </objects>
+</document>

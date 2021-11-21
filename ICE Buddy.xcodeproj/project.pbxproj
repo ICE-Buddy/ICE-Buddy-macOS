@@ -30,6 +30,9 @@
 		51444BC62745270E00AD2C68 /* tripInfo1.json in Resources */ = {isa = PBXBuildFile; fileRef = 51444BC42745270E00AD2C68 /* tripInfo1.json */; };
 		51444BC72745270E00AD2C68 /* tripInfo2.json in Resources */ = {isa = PBXBuildFile; fileRef = 51444BC52745270E00AD2C68 /* tripInfo2.json */; };
 		51444BCE27454FEC00AD2C68 /* FredKitAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 51444BCD27454FEC00AD2C68 /* FredKitAnalytics */; };
+		51F66F22274A600A0076A3F5 /* SharingMenuitem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F66F21274A600A0076A3F5 /* SharingMenuitem.swift */; };
+		51F66F25274A796C0076A3F5 /* JourneyMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F66F23274A796C0076A3F5 /* JourneyMapViewController.swift */; };
+		51F66F26274A796C0076A3F5 /* JourneyMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51F66F24274A796C0076A3F5 /* JourneyMapViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +77,9 @@
 		51444BBE2745086000AD2C68 /* JourneyStopCustomViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JourneyStopCustomViewController.xib; sourceTree = "<group>"; };
 		51444BC42745270E00AD2C68 /* tripInfo1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tripInfo1.json; sourceTree = "<group>"; };
 		51444BC52745270E00AD2C68 /* tripInfo2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tripInfo2.json; sourceTree = "<group>"; };
+		51F66F21274A600A0076A3F5 /* SharingMenuitem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharingMenuitem.swift; sourceTree = "<group>"; };
+		51F66F23274A796C0076A3F5 /* JourneyMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyMapViewController.swift; sourceTree = "<group>"; };
+		51F66F24274A796C0076A3F5 /* JourneyMapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JourneyMapViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,7 +148,10 @@
 				51444BBD2745086000AD2C68 /* JourneyStopCustomViewController.swift */,
 				51444BBE2745086000AD2C68 /* JourneyStopCustomViewController.xib */,
 				51444BAB2744423300AD2C68 /* JourneyViewController.xib */,
+				51F66F23274A796C0076A3F5 /* JourneyMapViewController.swift */,
+				51F66F24274A796C0076A3F5 /* JourneyMapViewController.xib */,
 				51444BA427442A6700AD2C68 /* ICEConnection.swift */,
+				51F66F21274A600A0076A3F5 /* SharingMenuitem.swift */,
 				51444B77274426AF00AD2C68 /* Assets.xcassets */,
 				511D62C227455470001C8399 /* Main.storyboard */,
 				51444B7C274426AF00AD2C68 /* ICE_Buddy.entitlements */,
@@ -292,6 +301,7 @@
 				51444BC02745086000AD2C68 /* JourneyStopCustomViewController.xib in Resources */,
 				511D62C327455470001C8399 /* Main.storyboard in Resources */,
 				511D62C1274553FE001C8399 /* AboutViewController.xib in Resources */,
+				51F66F26274A796C0076A3F5 /* JourneyMapViewController.xib in Resources */,
 				51444BB62744F3CE00AD2C68 /* status.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,12 +348,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51F66F22274A600A0076A3F5 /* SharingMenuitem.swift in Sources */,
 				51444BA02744271400AD2C68 /* MenuBarController.swift in Sources */,
 				51444B74274426AE00AD2C68 /* AppDelegate.swift in Sources */,
 				51444BA8274438BE00AD2C68 /* ICEHeader.swift in Sources */,
 				51444BBF2745086000AD2C68 /* JourneyStopCustomViewController.swift in Sources */,
 				51444BA527442A6700AD2C68 /* ICEConnection.swift in Sources */,
 				511D62C0274553FE001C8399 /* AboutViewController.swift in Sources */,
+				51F66F25274A796C0076A3F5 /* JourneyMapViewController.swift in Sources */,
 				51444BAC2744423300AD2C68 /* JourneyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -504,7 +516,7 @@
 				CODE_SIGN_ENTITLEMENTS = "ICE Buddy/ICE_Buddy.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = CS5SL7ZTHZ;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -534,7 +546,7 @@
 				CODE_SIGN_ENTITLEMENTS = "ICE Buddy/ICE_Buddy.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = CS5SL7ZTHZ;
 				ENABLE_HARDENED_RUNTIME = YES;
 				EXCLUDED_SOURCE_FILE_NAMES = (

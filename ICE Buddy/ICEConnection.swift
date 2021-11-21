@@ -165,6 +165,8 @@ struct Stop {
     
     let passed: Bool
     
+    let coordinate: CLLocationCoordinate2D
+    
     var humanReadableArrivalTime: String {
         if let actualArrivalTime = actualArrivalTime {
             return actualArrivalTime.minuteTimeString
@@ -197,6 +199,16 @@ struct Stop {
             
             if let stopName = station["name"] as? String {
                 self.name = stopName
+            } else {
+                return nil
+            }
+            
+            if let geocoordinates = station["geocoordinates"] as? [String: Double] {
+                if let latitude = geocoordinates["latitude"], let longitude = geocoordinates["longitude"] {
+                    self.coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+                } else {
+                    return nil
+                }
             } else {
                 return nil
             }

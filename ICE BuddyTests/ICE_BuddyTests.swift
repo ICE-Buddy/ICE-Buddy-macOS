@@ -20,10 +20,10 @@ class ICE_BuddyTests: XCTestCase {
 
     func testTriebzugNummern() throws {
         let tz240 = TrainType.trainType(from: "Tz240")
-        XCTAssertEqual(tz240, .ice2)
+        XCTAssertEqual(tz240, .BR402)
         
         let tz9453 = TrainType.trainType(from: "Tz9453")
-        XCTAssertEqual(tz9453, .ice4)
+        XCTAssertEqual(tz9453, .BR412)
     }
 
     func testPerformanceExample() throws {

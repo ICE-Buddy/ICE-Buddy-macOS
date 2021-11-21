@@ -38,8 +38,14 @@ class MenuBarController: NSObject {
     let twitterMenuItem = NSMenuItem(title: "Questions? → Hit me up on Twitter!", action: nil, keyEquivalent: "")
     let quitMenuItem = NSMenuItem(title: "Quit ICE Buddy", action: nil, keyEquivalent: "")
     
+    let mapVC = JourneyMapViewController()
+    let showMapMenuItem = NSMenuItem(title: "Route on Map", action: nil, keyEquivalent: "")
+    let mapMenuItem = NSMenuItem()
+    
     let menu = NSMenu(title: "ICE Buddy Active")
     let disconnectedMenu = NSMenu(title: "ICE Buddy Disconnected")
+    
+    let shareICEBuddy = NSMenuItem(title: "Share ICE Buddy", action: nil, keyEquivalent: "")
     
     var continousUpdateTimer: Timer?
     
@@ -65,7 +71,15 @@ class MenuBarController: NSObject {
         quitMenuItem.action = #selector(quitApp)
         quitMenuItem.target = self
         
+        shareICEBuddy.submenu = NSSharingServicePicker.menu(forSharingItems: [URL(string: "https://ice-buddy.riedel.wtf")!])
+        
         iceHeaderMenuItem.view = iceHeaderVC.view
+        
+        let mapMenu = NSMenu(title: "Map Menu")
+        
+        showMapMenuItem.submenu = mapMenu
+        mapMenuItem.view = mapVC.view
+        mapMenu.addItem(mapMenuItem)
         
         self.refreshMenuBarMenu()
     }
@@ -107,17 +121,17 @@ class MenuBarController: NSObject {
         self.menu.addItem(iceHeaderMenuItem)
         self.menu.addItem(NSMenuItem.separator())
         self.menu.addItem(connectionMenuItem)
-//        self.menu.addItem(nextStopTitleMenuItem)
-//        self.menu.addItem(nextStopValueMenuItem)
-//        self.menu.addItem(nextStopTrackMenuItem)
-        self.menu.addItem(NSMenuItem.separator())
         self.menu.addItem(currentSpeedMenuItem)
         self.menu.addItem(trainTypeMenuItem)
+        self.menu.addItem(NSMenuItem.separator())
+        // connection stops dynamically added inbetween
+        self.menu.addItem(showMapMenuItem)
         self.menu.addItem(NSMenuItem.separator())
         self.menu.addItem(iceBuddyHeaderMenuItem)
         self.menu.addItem(lastUpdateMenuitem)
         self.menu.addItem(NSMenuItem.separator())
         self.menu.addItem(aboutMenuItem)
+        self.menu.addItem(shareICEBuddy)
         self.menu.addItem(launchAtLoginMenuItem)
         self.menu.addItem(twitterMenuItem)
         self.menu.addItem(quitMenuItem)
@@ -205,7 +219,12 @@ class MenuBarController: NSObject {
                 let formatter = MeasurementFormatter()
                 self.currentSpeedMenuItem.title = formatter.string(from: speed)
                 self.trainTypeMenuItem.title = "Train Model: \(metaData.trainType.humanReadableTrainType)"
+                #if DEBUG
+                self.lastUpdateMenuitem.title = "Updated Infos: Just now"
+                #else
                 self.lastUpdateMenuitem.title = "Updated Infos: \(metaData.timestamp.humanReadableDateAndTimeString)"
+                #endif
+                
                 self.iceHeaderVC.imageView.image = metaData.trainType.trainIcon
                 self.iceStatusItem?.menu = self.menu
             } else {
@@ -223,6 +242,7 @@ class MenuBarController: NSObject {
 #endif
             
             if let tripData = tripData, let origin = tripData.startStop, let destination = tripData.finalStop {
+                self.mapVC.stops = tripData.stops
                 self.connectionMenuItem.title = "\(tripData.trainId): \(origin.name) → \(destination.name)"
                 
                 if let nextStop = tripData.nextStop {
@@ -236,7 +256,7 @@ class MenuBarController: NSObject {
                     })
                     
                     self.journeyViewControllers.enumerated().forEach { enumeration in
-                        let index = 3 + enumeration.offset
+                        let index = 6 + enumeration.offset
                         let stopMenuItem = NSMenuItem()
                         stopMenuItem.view = enumeration.element.view
                         self.menu.insertItem(stopMenuItem, at: index)
