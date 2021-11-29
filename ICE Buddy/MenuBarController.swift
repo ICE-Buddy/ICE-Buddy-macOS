@@ -11,6 +11,7 @@ import LaunchAtLogin
 import FredKit
 import FredKitAnalytics
 import UserNotifications
+import StoreKit
 
 class MenuBarController: NSObject {
     
@@ -140,7 +141,7 @@ class MenuBarController: NSObject {
 //            let minutesToArrive = Int(timeToArrive / TimeInterval.minute)
             
             notificationContent.title = "Ausstiegsalarm \(stop.name)"
-            notificationContent.subtitle = "Arriving at \(stop.name) in 10 mins"
+            notificationContent.subtitle = "Arriving in 10 mins on track \(stop.actualTrack)."
             notificationContent.body = "Thank you for traveling with ICE Buddy today."
             
             let triggerDate = actualArrivalTime.addingTimeInterval(-10 * TimeInterval.minute)
@@ -240,6 +241,7 @@ class MenuBarController: NSObject {
         
         set {
             NSUserDefaultsController.shared.defaults.setValue(newValue, forKey: "ausstiegsAlarmStation")
+            SKStoreReviewController.requestReview()
         }
     }
     
@@ -355,6 +357,9 @@ class MenuBarController: NSObject {
     
     @objc func toggleSpeedPin() {
         self.isSpeedPinned = !self.isSpeedPinned
+        if self.isSpeedPinned {
+            SKStoreReviewController.requestReview()
+        }
         self.refreshSpeedMenuItem()
         refreshMenuBarMenues()
     }
