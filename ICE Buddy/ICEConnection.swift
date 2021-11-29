@@ -20,6 +20,15 @@ enum InternetConnection {
         }
         return .unstable
     }
+    
+    var localizedString: String {
+        switch self {
+        case .high:
+            return "High"
+        case .unstable:
+            return "Unstable"
+        }
+    }
 }
 
 enum TrainType: CaseIterable {
@@ -337,6 +346,8 @@ class ICEConnection {
                 completion(metaData)
             } else {
 #if DEBUG
+                completion(nil)
+                return
                 if let data = try? Data(contentsOf: Bundle.main.url(forResource: "status", withExtension: "json")!) {
                     let jsonResult = try? JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
                     if let jsonResult = jsonResult as? [String: Any] {
@@ -359,6 +370,9 @@ class ICEConnection {
                 completion(metaData)
             } else {
 #if DEBUG
+                
+                completion(nil)
+                return
                 let random = Int.random(in: 1...1)
                 
                 if random == 2 {

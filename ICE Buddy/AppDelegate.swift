@@ -17,7 +17,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
         FredKitAnalytics.setup(appId: "7")
-        MenuBarController.shared.refreshMenuBarItem()
+        MenuBarController.shared.refreshMenuBarItems()
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {

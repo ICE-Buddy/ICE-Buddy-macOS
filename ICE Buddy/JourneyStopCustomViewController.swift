@@ -9,6 +9,7 @@ import Cocoa
 
 class JourneyStopCustomViewController: NSViewController {
     
+    @IBOutlet weak var ausstiegsAlarmIcon: NSImageView!
     @IBOutlet weak var stopNameLabel: NSTextField!
     @IBOutlet weak var arriveTimeLabel: NSTextField!
     @IBOutlet weak var trackLabel: NSTextField!
@@ -46,6 +47,12 @@ class JourneyStopCustomViewController: NSViewController {
         } else {
             self.delayLabel.isHidden = false
             self.delayLabel.stringValue = stop.departureDelay
+        }
+        
+        if stop.name == MenuBarController.ausstiegsAlarmStation {
+            ausstiegsAlarmIcon.isHidden = false
+        } else {
+            ausstiegsAlarmIcon.isHidden = true
         }
         
         self.stopNameLabel.stringValue = stop.name

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="19455" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="19529" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="19455"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="19529"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -15,11 +15,11 @@
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customView id="Hz6-mo-xeY">
-            <rect key="frame" x="0.0" y="0.0" width="487" height="292"/>
+            <rect key="frame" x="0.0" y="0.0" width="487" height="332"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Pyg-hd-Fvd">
-                    <rect key="frame" x="198" y="247" width="91" height="21"/>
+                    <rect key="frame" x="198" y="287" width="91" height="21"/>
                     <textFieldCell key="cell" lineBreakMode="clipping" title="ICE Buddy" id="CyR-gY-Zm4">
                         <font key="font" metaFont="systemSemibold" size="18"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -27,7 +27,7 @@
                     </textFieldCell>
                 </textField>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="q4Z-Ab-3m5">
-                    <rect key="frame" x="121" y="223" width="246" height="16"/>
+                    <rect key="frame" x="121" y="263" width="246" height="16"/>
                     <textFieldCell key="cell" lineBreakMode="clipping" title="Developed by Frederik Riedel on an ICE." id="KiY-zX-Ugt">
                         <font key="font" usesAppearanceFont="YES"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -35,7 +35,7 @@
                     </textFieldCell>
                 </textField>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="384-Fw-UvZ">
-                    <rect key="frame" x="30" y="199" width="427" height="16"/>
+                    <rect key="frame" x="30" y="239" width="427" height="16"/>
                     <textFieldCell key="cell" lineBreakMode="clipping" title="Amount of API calls reduced to a minimum (only on user interactions)." id="EH6-fk-4oO">
                         <font key="font" usesAppearanceFont="YES"/>
                         <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
@@ -43,10 +43,10 @@
                     </textFieldCell>
                 </textField>
                 <stackView distribution="fill" orientation="horizontal" alignment="top" spacing="12" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pmb-DD-V1Q">
-                    <rect key="frame" x="287" y="20" width="180" height="20"/>
+                    <rect key="frame" x="288" y="20" width="179" height="20"/>
                     <subviews>
                         <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="kXj-Vy-Oqe">
-                            <rect key="frame" x="-7" y="-7" width="78" height="32"/>
+                            <rect key="frame" x="-7" y="-7" width="77" height="32"/>
                             <buttonCell key="cell" type="push" title="Imprint" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="6Cg-zr-6TF">
                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                 <font key="font" metaFont="system"/>
@@ -56,7 +56,7 @@
                             </connections>
                         </button>
                         <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Czp-fG-hht">
-                            <rect key="frame" x="69" y="-7" width="118" height="32"/>
+                            <rect key="frame" x="68" y="-7" width="118" height="32"/>
                             <buttonCell key="cell" type="push" title="Privacy Policy" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="tHK-yS-65c">
                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                 <font key="font" metaFont="system"/>
@@ -76,22 +76,32 @@
                     </customSpacing>
                 </stackView>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="G72-yZ-NQy">
-                    <rect key="frame" x="131" y="175" width="226" height="16"/>
+                    <rect key="frame" x="131" y="215" width="226" height="16"/>
                     <textFieldCell key="cell" lineBreakMode="clipping" title="Sorry, a nice app icon is still missing." id="0e4-uc-Avs">
                         <font key="font" usesAppearanceFont="YES"/>
                         <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UpV-ke-gZz">
+                    <rect key="frame" x="116" y="60" width="256" height="135"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="135" id="qgD-em-lpn"/>
+                    </constraints>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="icon ice buddy-256" id="g33-F8-nKJ"/>
+                </imageView>
             </subviews>
             <constraints>
+                <constraint firstItem="kXj-Vy-Oqe" firstAttribute="top" relation="greaterThanOrEqual" secondItem="UpV-ke-gZz" secondAttribute="bottom" constant="20" id="0RF-qR-PqT"/>
                 <constraint firstItem="384-Fw-UvZ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="32" id="0bh-jU-qpG"/>
                 <constraint firstItem="G72-yZ-NQy" firstAttribute="top" secondItem="384-Fw-UvZ" secondAttribute="bottom" constant="8" symbolic="YES" id="2zo-E4-bg7"/>
                 <constraint firstItem="384-Fw-UvZ" firstAttribute="top" secondItem="q4Z-Ab-3m5" secondAttribute="bottom" constant="8" symbolic="YES" id="Ao2-ea-GJC"/>
+                <constraint firstItem="UpV-ke-gZz" firstAttribute="top" secondItem="G72-yZ-NQy" secondAttribute="bottom" constant="20" id="Cc2-DD-9P9"/>
                 <constraint firstItem="q4Z-Ab-3m5" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="MqB-Xx-Nxb"/>
                 <constraint firstAttribute="trailing" secondItem="pmb-DD-V1Q" secondAttribute="trailing" constant="20" symbolic="YES" id="N7G-ai-rk2"/>
                 <constraint firstItem="q4Z-Ab-3m5" firstAttribute="top" secondItem="Pyg-hd-Fvd" secondAttribute="bottom" constant="8" symbolic="YES" id="QFf-fe-azY"/>
                 <constraint firstItem="pmb-DD-V1Q" firstAttribute="top" relation="greaterThanOrEqual" secondItem="384-Fw-UvZ" secondAttribute="bottom" constant="24" id="SfG-7H-0RX"/>
+                <constraint firstItem="UpV-ke-gZz" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="Wcd-5s-h7l"/>
                 <constraint firstAttribute="bottom" secondItem="pmb-DD-V1Q" secondAttribute="bottom" constant="20" symbolic="YES" id="ZRi-ZF-UCN"/>
                 <constraint firstItem="Pyg-hd-Fvd" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="24" id="bna-Lx-iS3"/>
                 <constraint firstItem="q4Z-Ab-3m5" firstAttribute="centerX" secondItem="Pyg-hd-Fvd" secondAttribute="centerX" id="bsB-2h-Sva"/>
@@ -99,7 +109,10 @@
                 <constraint firstItem="Pyg-hd-Fvd" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="xm5-l1-OJV"/>
                 <constraint firstItem="384-Fw-UvZ" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="zGu-hc-ZvO"/>
             </constraints>
-            <point key="canvasLocation" x="139.5" y="310"/>
+            <point key="canvasLocation" x="139.5" y="268"/>
         </customView>
     </objects>
+    <resources>
+        <image name="icon ice buddy-256" width="256" height="256"/>
+    </resources>
 </document>

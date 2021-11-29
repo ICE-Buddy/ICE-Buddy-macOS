@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="19455" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="19529" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="19455"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="19529"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="JourneyStopCustomViewController" customModule="ICE_Buddy" customModuleProvider="target">
             <connections>
                 <outlet property="arriveTimeLabel" destination="ARd-fJ-jiR" id="PdO-Ej-HWN"/>
+                <outlet property="ausstiegsAlarmIcon" destination="Fm7-Tu-dXK" id="YVR-TV-oPO"/>
                 <outlet property="delayLabel" destination="7VP-jg-Pym" id="r0B-F2-ZoX"/>
                 <outlet property="stopNameLabel" destination="MUz-Zg-syW" id="8Vc-y7-FV6"/>
                 <outlet property="trackLabel" destination="mfo-hb-yTJ" id="Zsh-PL-HEQ"/>
@@ -90,11 +91,16 @@
                         <real value="3.4028234663852886e+38"/>
                     </customSpacing>
                 </stackView>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Fm7-Tu-dXK">
+                    <rect key="frame" x="134" y="9.5" width="15.5" height="16"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="alarm.fill" catalog="system" id="vas-om-XOp"/>
+                </imageView>
             </subviews>
             <constraints>
                 <constraint firstItem="T42-m2-47b" firstAttribute="leading" secondItem="oUO-NY-mPM" secondAttribute="leading" id="0V7-Ts-ibu"/>
                 <constraint firstItem="T42-m2-47b" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="3Cn-Ee-55B"/>
                 <constraint firstItem="T42-m2-47b" firstAttribute="trailing" secondItem="oUO-NY-mPM" secondAttribute="trailing" id="BBV-wB-UJo"/>
+                <constraint firstItem="Fm7-Tu-dXK" firstAttribute="leading" secondItem="MUz-Zg-syW" secondAttribute="trailing" constant="8" symbolic="YES" id="F01-kr-331"/>
                 <constraint firstItem="oUO-NY-mPM" firstAttribute="centerY" secondItem="MUz-Zg-syW" secondAttribute="centerY" id="QJd-Q9-Vw4"/>
                 <constraint firstItem="MUz-Zg-syW" firstAttribute="leading" secondItem="oUO-NY-mPM" secondAttribute="trailing" constant="10" id="SO1-Lt-vVs"/>
                 <constraint firstItem="oUO-NY-mPM" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="12" id="brn-Lk-CId"/>
@@ -102,6 +108,7 @@
                 <constraint firstAttribute="bottom" secondItem="MUz-Zg-syW" secondAttribute="bottom" constant="8" id="fdr-Qs-bPn"/>
                 <constraint firstItem="EeZ-0x-y4a" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="MUz-Zg-syW" secondAttribute="trailing" constant="8" symbolic="YES" id="gIj-6H-4yb"/>
                 <constraint firstItem="itf-2B-Py0" firstAttribute="top" secondItem="oUO-NY-mPM" secondAttribute="bottom" id="hGW-aM-yeA"/>
+                <constraint firstItem="Fm7-Tu-dXK" firstAttribute="centerY" secondItem="MUz-Zg-syW" secondAttribute="centerY" id="lRV-1I-iTy"/>
                 <constraint firstItem="oUO-NY-mPM" firstAttribute="top" secondItem="T42-m2-47b" secondAttribute="bottom" id="m0c-na-G3Y"/>
                 <constraint firstItem="itf-2B-Py0" firstAttribute="trailing" secondItem="oUO-NY-mPM" secondAttribute="trailing" id="ncR-mr-b33"/>
                 <constraint firstItem="itf-2B-Py0" firstAttribute="leading" secondItem="oUO-NY-mPM" secondAttribute="leading" id="oae-OL-Gcv"/>
@@ -113,6 +120,7 @@
         </customView>
     </objects>
     <resources>
+        <image name="alarm.fill" catalog="system" width="15" height="16"/>
         <image name="stop_badge" width="142" height="73"/>
         <image name="stop_icon" width="142" height="142"/>
     </resources>
