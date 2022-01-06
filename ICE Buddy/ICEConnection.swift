@@ -10,6 +10,7 @@ import Alamofire
 import CoreLocation
 import FredKit
 import AppKit
+import FredKitAnalytics
 
 enum InternetConnection {
     case high, unstable
@@ -367,12 +368,13 @@ class ICEConnection {
         AF.request("https://iceportal.de/api1/rs/tripInfo/trip").responseJSON { response in
             if let result = response.value as? [String: Any] {
                 let metaData = TrainTripData(dict: result)
+                
+                
+                
                 completion(metaData)
             } else {
 #if DEBUG
                 
-                completion(nil)
-                return
                 let random = Int.random(in: 1...1)
                 
                 if random == 2 {
@@ -384,6 +386,7 @@ class ICEConnection {
                     let jsonResult = try? JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
                     if let jsonResult = jsonResult as? [String: Any] {
                         let metaData = TrainTripData(dict: jsonResult)
+                        
                         completion(metaData)
                     }
                 }

@@ -30,6 +30,7 @@
 		51444BC62745270E00AD2C68 /* tripInfo1.json in Resources */ = {isa = PBXBuildFile; fileRef = 51444BC42745270E00AD2C68 /* tripInfo1.json */; };
 		51444BC72745270E00AD2C68 /* tripInfo2.json in Resources */ = {isa = PBXBuildFile; fileRef = 51444BC52745270E00AD2C68 /* tripInfo2.json */; };
 		51444BCE27454FEC00AD2C68 /* FredKitAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 51444BCD27454FEC00AD2C68 /* FredKitAnalytics */; };
+		51CA45322773D66B0022902A /* sbahnStuttgart.json in Resources */ = {isa = PBXBuildFile; fileRef = 51CA45312773D66B0022902A /* sbahnStuttgart.json */; };
 		51F66F22274A600A0076A3F5 /* SharingMenuitem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F66F21274A600A0076A3F5 /* SharingMenuitem.swift */; };
 		51F66F25274A796C0076A3F5 /* JourneyMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F66F23274A796C0076A3F5 /* JourneyMapViewController.swift */; };
 		51F66F26274A796C0076A3F5 /* JourneyMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51F66F24274A796C0076A3F5 /* JourneyMapViewController.xib */; };
@@ -77,6 +78,7 @@
 		51444BBE2745086000AD2C68 /* JourneyStopCustomViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JourneyStopCustomViewController.xib; sourceTree = "<group>"; };
 		51444BC42745270E00AD2C68 /* tripInfo1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tripInfo1.json; sourceTree = "<group>"; };
 		51444BC52745270E00AD2C68 /* tripInfo2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tripInfo2.json; sourceTree = "<group>"; };
+		51CA45312773D66B0022902A /* sbahnStuttgart.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sbahnStuttgart.json; sourceTree = "<group>"; };
 		51F66F21274A600A0076A3F5 /* SharingMenuitem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharingMenuitem.swift; sourceTree = "<group>"; };
 		51F66F23274A796C0076A3F5 /* JourneyMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyMapViewController.swift; sourceTree = "<group>"; };
 		51F66F24274A796C0076A3F5 /* JourneyMapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JourneyMapViewController.xib; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 				51444BB52744F3CE00AD2C68 /* status.json */,
 				51444BC42745270E00AD2C68 /* tripInfo1.json */,
 				51444BC52745270E00AD2C68 /* tripInfo2.json */,
+				51CA45312773D66B0022902A /* sbahnStuttgart.json */,
 				511D62BE274553FE001C8399 /* AboutViewController.swift */,
 				511D62BF274553FE001C8399 /* AboutViewController.xib */,
 				51444B9F2744271400AD2C68 /* MenuBarController.swift */,
@@ -295,6 +298,7 @@
 			files = (
 				51444B78274426AF00AD2C68 /* Assets.xcassets in Resources */,
 				51444BAD2744423300AD2C68 /* JourneyViewController.xib in Resources */,
+				51CA45322773D66B0022902A /* sbahnStuttgart.json in Resources */,
 				51444BA9274438BE00AD2C68 /* ICEHeader.xib in Resources */,
 				51444BC72745270E00AD2C68 /* tripInfo2.json in Resources */,
 				51444BC62745270E00AD2C68 /* tripInfo1.json in Resources */,
@@ -519,6 +523,10 @@
 				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_TEAM = CS5SL7ZTHZ;
 				ENABLE_HARDENED_RUNTIME = YES;
+				EXCLUDED_SOURCE_FILE_NAMES = (
+					FredKit/UI/FredKitSimpleDetailDisclosureTableViewCell.xib,
+					FredKit/UI/FredKitChartTableViewCell.xib,
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ICE-Buddy-Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
@@ -530,7 +538,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "wtf.riedel.ICE-Buddy";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -553,6 +561,7 @@
 					tripInfo2.json,
 					tripInfo1.json,
 					status.json,
+					sbahnStuttgart.json,
 				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ICE-Buddy-Info.plist";
@@ -565,7 +574,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "wtf.riedel.ICE-Buddy";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -739,8 +748,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/frogg/FredKitAnalytics.git";
 			requirement = {
-				branch = master;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.10;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

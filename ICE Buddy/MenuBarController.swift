@@ -254,7 +254,8 @@ class MenuBarController: NSObject {
         iceStatusItem?.autosaveName = "ice-buddy"
         
         
-        iceStatusItem?.button?.image = NSImage(systemSymbolName: "tram.fill", accessibilityDescription: "ice train")
+
+        iceStatusItem?.button?.image = NSImage(named: "menu bar icon")
         
         launchAtLoginMenuItem.action = #selector(toggleLaunchAtLogin)
         launchAtLoginMenuItem.target = self
