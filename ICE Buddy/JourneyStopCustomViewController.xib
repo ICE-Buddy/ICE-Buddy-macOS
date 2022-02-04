@@ -10,8 +10,11 @@
             <connections>
                 <outlet property="arriveTimeLabel" destination="ARd-fJ-jiR" id="PdO-Ej-HWN"/>
                 <outlet property="ausstiegsAlarmIcon" destination="Fm7-Tu-dXK" id="YVR-TV-oPO"/>
+                <outlet property="bottomSegmentImageView" destination="itf-2B-Py0" id="d4F-w7-oF2"/>
                 <outlet property="delayLabel" destination="7VP-jg-Pym" id="r0B-F2-ZoX"/>
+                <outlet property="mainSegmentImageView" destination="oUO-NY-mPM" id="1Sr-su-gnZ"/>
                 <outlet property="stopNameLabel" destination="MUz-Zg-syW" id="8Vc-y7-FV6"/>
+                <outlet property="topSegmentImageView" destination="T42-m2-47b" id="HBd-pR-AHe"/>
                 <outlet property="trackLabel" destination="mfo-hb-yTJ" id="Zsh-PL-HEQ"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
             </connections>

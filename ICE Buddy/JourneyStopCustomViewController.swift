@@ -9,6 +9,10 @@ import Cocoa
 
 class JourneyStopCustomViewController: NSViewController {
     
+    @IBOutlet weak var topSegmentImageView: NSImageView!
+    @IBOutlet weak var bottomSegmentImageView: NSImageView!
+    @IBOutlet weak var mainSegmentImageView: NSImageView!
+    
     @IBOutlet weak var ausstiegsAlarmIcon: NSImageView!
     @IBOutlet weak var stopNameLabel: NSTextField!
     @IBOutlet weak var arriveTimeLabel: NSTextField!
@@ -38,8 +42,14 @@ class JourneyStopCustomViewController: NSViewController {
         
         if stop.passed {
             self.stopNameLabel.textColor = NSColor.tertiaryLabelColor
+            self.topSegmentImageView.image = NSImage(named: "stop_badge_grey")
+            self.bottomSegmentImageView.image = NSImage(named: "stop_badge_grey")
+            self.mainSegmentImageView.image = NSImage(named: "stop_icon_grey")
         } else {
             self.stopNameLabel.textColor = NSColor.labelColor
+            self.topSegmentImageView.image = NSImage(named: "stop_badge")
+            self.bottomSegmentImageView.image = NSImage(named: "stop_badge")
+            self.mainSegmentImageView.image = NSImage(named: "stop_icon")
         }
         
         if stop.departureDelay == "" {

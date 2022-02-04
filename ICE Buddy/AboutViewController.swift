@@ -37,4 +37,12 @@ class AboutViewController: NSViewController {
                                 launchIdentifiers: nil)
     }
     
+    @IBAction func openDonatusWebsite(_ sender: Any) {
+        let url = URL(string:"https://donatuswolf.de")!
+        NSWorkspace.shared.open([url],
+                                withAppBundleIdentifier:"com.apple.Safari",
+                                options: [],
+                                additionalEventParamDescriptor: nil,
+                                launchIdentifiers: nil)
+    }
 }
