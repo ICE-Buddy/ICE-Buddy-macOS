@@ -30,6 +30,7 @@
 		51444BC62745270E00AD2C68 /* tripInfo1.json in Resources */ = {isa = PBXBuildFile; fileRef = 51444BC42745270E00AD2C68 /* tripInfo1.json */; };
 		51444BC72745270E00AD2C68 /* tripInfo2.json in Resources */ = {isa = PBXBuildFile; fileRef = 51444BC52745270E00AD2C68 /* tripInfo2.json */; };
 		51444BCE27454FEC00AD2C68 /* FredKitAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 51444BCD27454FEC00AD2C68 /* FredKitAnalytics */; };
+		5165213927E223B300E75EF5 /* ice.json in Resources */ = {isa = PBXBuildFile; fileRef = 5165213827E223B300E75EF5 /* ice.json */; };
 		51CA45322773D66B0022902A /* sbahnStuttgart.json in Resources */ = {isa = PBXBuildFile; fileRef = 51CA45312773D66B0022902A /* sbahnStuttgart.json */; };
 		51F66F22274A600A0076A3F5 /* SharingMenuitem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F66F21274A600A0076A3F5 /* SharingMenuitem.swift */; };
 		51F66F25274A796C0076A3F5 /* JourneyMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F66F23274A796C0076A3F5 /* JourneyMapViewController.swift */; };
@@ -78,6 +79,7 @@
 		51444BBE2745086000AD2C68 /* JourneyStopCustomViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JourneyStopCustomViewController.xib; sourceTree = "<group>"; };
 		51444BC42745270E00AD2C68 /* tripInfo1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tripInfo1.json; sourceTree = "<group>"; };
 		51444BC52745270E00AD2C68 /* tripInfo2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tripInfo2.json; sourceTree = "<group>"; };
+		5165213827E223B300E75EF5 /* ice.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ice.json; sourceTree = "<group>"; };
 		51CA45312773D66B0022902A /* sbahnStuttgart.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sbahnStuttgart.json; sourceTree = "<group>"; };
 		51F66F21274A600A0076A3F5 /* SharingMenuitem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharingMenuitem.swift; sourceTree = "<group>"; };
 		51F66F23274A796C0076A3F5 /* JourneyMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyMapViewController.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 				51444B9E274426CD00AD2C68 /* ICE-Buddy-Info.plist */,
 				51444B73274426AE00AD2C68 /* AppDelegate.swift */,
 				51444BB52744F3CE00AD2C68 /* status.json */,
+				5165213827E223B300E75EF5 /* ice.json */,
 				51444BC42745270E00AD2C68 /* tripInfo1.json */,
 				51444BC52745270E00AD2C68 /* tripInfo2.json */,
 				51CA45312773D66B0022902A /* sbahnStuttgart.json */,
@@ -301,6 +304,7 @@
 				51CA45322773D66B0022902A /* sbahnStuttgart.json in Resources */,
 				51444BA9274438BE00AD2C68 /* ICEHeader.xib in Resources */,
 				51444BC72745270E00AD2C68 /* tripInfo2.json in Resources */,
+				5165213927E223B300E75EF5 /* ice.json in Resources */,
 				51444BC62745270E00AD2C68 /* tripInfo1.json in Resources */,
 				51444BC02745086000AD2C68 /* JourneyStopCustomViewController.xib in Resources */,
 				511D62C327455470001C8399 /* Main.storyboard in Resources */,
@@ -520,7 +524,7 @@
 				CODE_SIGN_ENTITLEMENTS = "ICE Buddy/ICE_Buddy.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 13;
 				DEVELOPMENT_TEAM = CS5SL7ZTHZ;
 				ENABLE_HARDENED_RUNTIME = YES;
 				EXCLUDED_SOURCE_FILE_NAMES = (
@@ -538,7 +542,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "wtf.riedel.ICE-Buddy";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -554,7 +558,7 @@
 				CODE_SIGN_ENTITLEMENTS = "ICE Buddy/ICE_Buddy.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 13;
 				DEVELOPMENT_TEAM = CS5SL7ZTHZ;
 				ENABLE_HARDENED_RUNTIME = YES;
 				EXCLUDED_SOURCE_FILE_NAMES = (
@@ -574,7 +578,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "wtf.riedel.ICE-Buddy";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

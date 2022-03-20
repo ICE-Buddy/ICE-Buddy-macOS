@@ -407,7 +407,6 @@ class MenuBarController: NSObject {
         disconnectedMenu.removeAllItems()
         disconnectedMenu.delegate = self
         disconnectedMenu.addItem(disconnectedMenuItem)
-        //        disconnectedMenu.addItem(openLoginMenuItem)
         self.disconnectedMenu.addItem(NSMenuItem.separator())
         self.disconnectedMenu.addItem(disconnectedAboutMenuItem)
         self.disconnectedMenu.addItem(disconnectedLaunchAtLoginMenuItem)
@@ -444,13 +443,6 @@ class MenuBarController: NSObject {
         
         ICEConnection.shared.loadCurrentTrainData { metaData in
             
-#if DEBUG
-            //            if self.debugCounter%2==1 {
-            //                self.showDisconnectedMenu()
-            //                return
-            //            }
-#endif
-            
             if let metaData = metaData {
                 let speed = Measurement(value: metaData.speed, unit: UnitSpeed.kilometersPerHour)
                 let formatter = MeasurementFormatter()
@@ -461,11 +453,8 @@ class MenuBarController: NSObject {
                 
                 self.internetQualityMenuitem.title = "Internet Quality: \(metaData.internetConnection.localizedString)"
                 
-#if DEBUG
-                self.lastUpdateMenuitem.title = "Updated Infos: Just now"
-#else
+
                 self.lastUpdateMenuitem.title = "Updated Infos: \(metaData.timestamp.humanReadableDateAndTimeString)"
-#endif
                 
                 self.iceHeaderVC.imageView.image = metaData.trainType.trainIcon
                 self.iceStatusItem?.menu = self.menu
@@ -475,13 +464,6 @@ class MenuBarController: NSObject {
         }
         
         ICEConnection.shared.loadCurrentTripData { tripData in
-            
-#if DEBUG
-            //            if self.debugCounter%2==1 {
-            //                self.showDisconnectedMenu()
-            //                return
-            //            }
-#endif
             
             if let tripData = tripData, let origin = tripData.startStop, let destination = tripData.finalStop {
                 self.mapVC.stops = tripData.stops
@@ -542,9 +524,9 @@ extension MenuBarController: NSMenuDelegate {
         if self.isConnected == false {
             self.refreshMenuBarMenues()
             self.isConnected = true
-        } else {
-            self.refreshMetaData()
         }
+            
+        self.refreshMetaData()
         
         FredKitAnalytics.trackViewController(viewControllerIds: ["Overview"])
         

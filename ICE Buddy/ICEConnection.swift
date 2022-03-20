@@ -347,9 +347,7 @@ class ICEConnection {
                 completion(metaData)
             } else {
 #if DEBUG
-                completion(nil)
-                return
-                if let data = try? Data(contentsOf: Bundle.main.url(forResource: "status", withExtension: "json")!) {
+                if let data = try? Data(contentsOf: Bundle.main.url(forResource: "ice", withExtension: "json")!) {
                     let jsonResult = try? JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
                     if let jsonResult = jsonResult as? [String: Any] {
                         let metaData = ICEMetaData(dict: jsonResult)
@@ -374,7 +372,8 @@ class ICEConnection {
                 completion(metaData)
             } else {
 #if DEBUG
-                
+                completion(nil)
+                return
                 let random = Int.random(in: 1...1)
                 
                 if random == 2 {
@@ -402,7 +401,7 @@ class ICEConnection {
 
 extension Array where Element == Int {
     private func number(number: Int, matchesWithTzn tzn: String) -> Bool {
-        tzn.lowercased() == "tz\(number)" || tzn.lowercased() == "tz \(number)"
+        tzn.lowercased() == "tz\(number)" || tzn.lowercased() == "tz \(number)" || tzn.lowercased() == "ice\(number)" || tzn.lowercased() == "ice \(number)"
     }
     
     func contains(triebzugnummer: String) -> Bool {
