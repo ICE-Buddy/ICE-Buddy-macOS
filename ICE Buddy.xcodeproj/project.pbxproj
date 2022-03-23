@@ -30,6 +30,7 @@
 		51444BC62745270E00AD2C68 /* tripInfo1.json in Resources */ = {isa = PBXBuildFile; fileRef = 51444BC42745270E00AD2C68 /* tripInfo1.json */; };
 		51444BC72745270E00AD2C68 /* tripInfo2.json in Resources */ = {isa = PBXBuildFile; fileRef = 51444BC52745270E00AD2C68 /* tripInfo2.json */; };
 		51444BCE27454FEC00AD2C68 /* FredKitAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 51444BCD27454FEC00AD2C68 /* FredKitAnalytics */; };
+		514B851C27EBA1D000838DAE /* paris.json in Resources */ = {isa = PBXBuildFile; fileRef = 514B851B27EBA1D000838DAE /* paris.json */; };
 		5165213927E223B300E75EF5 /* ice.json in Resources */ = {isa = PBXBuildFile; fileRef = 5165213827E223B300E75EF5 /* ice.json */; };
 		51CA45322773D66B0022902A /* sbahnStuttgart.json in Resources */ = {isa = PBXBuildFile; fileRef = 51CA45312773D66B0022902A /* sbahnStuttgart.json */; };
 		51F66F22274A600A0076A3F5 /* SharingMenuitem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F66F21274A600A0076A3F5 /* SharingMenuitem.swift */; };
@@ -79,6 +80,7 @@
 		51444BBE2745086000AD2C68 /* JourneyStopCustomViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JourneyStopCustomViewController.xib; sourceTree = "<group>"; };
 		51444BC42745270E00AD2C68 /* tripInfo1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tripInfo1.json; sourceTree = "<group>"; };
 		51444BC52745270E00AD2C68 /* tripInfo2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tripInfo2.json; sourceTree = "<group>"; };
+		514B851B27EBA1D000838DAE /* paris.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = paris.json; sourceTree = "<group>"; };
 		5165213827E223B300E75EF5 /* ice.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ice.json; sourceTree = "<group>"; };
 		51CA45312773D66B0022902A /* sbahnStuttgart.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sbahnStuttgart.json; sourceTree = "<group>"; };
 		51F66F21274A600A0076A3F5 /* SharingMenuitem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharingMenuitem.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 				51444BC42745270E00AD2C68 /* tripInfo1.json */,
 				51444BC52745270E00AD2C68 /* tripInfo2.json */,
 				51CA45312773D66B0022902A /* sbahnStuttgart.json */,
+				514B851B27EBA1D000838DAE /* paris.json */,
 				511D62BE274553FE001C8399 /* AboutViewController.swift */,
 				511D62BF274553FE001C8399 /* AboutViewController.xib */,
 				51444B9F2744271400AD2C68 /* MenuBarController.swift */,
@@ -306,6 +309,7 @@
 				51444BC72745270E00AD2C68 /* tripInfo2.json in Resources */,
 				5165213927E223B300E75EF5 /* ice.json in Resources */,
 				51444BC62745270E00AD2C68 /* tripInfo1.json in Resources */,
+				514B851C27EBA1D000838DAE /* paris.json in Resources */,
 				51444BC02745086000AD2C68 /* JourneyStopCustomViewController.xib in Resources */,
 				511D62C327455470001C8399 /* Main.storyboard in Resources */,
 				511D62C1274553FE001C8399 /* AboutViewController.xib in Resources */,

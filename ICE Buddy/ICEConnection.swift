@@ -240,7 +240,12 @@ struct Stop {
         if let track = dict["track"] as? [String: Any] {
             
             if let actualTrack = track["actual"] as? String {
-                self.actualTrack = actualTrack
+                if actualTrack.isEmpty {
+                    self.actualTrack = "–"
+                } else {
+                    self.actualTrack = actualTrack
+                }
+                
             } else {
                 return nil
             }
@@ -248,7 +253,7 @@ struct Stop {
             if let scheduledTrack = track["scheduled"] as? String {
                 self.scheduledTrack = scheduledTrack
             } else {
-                return nil
+                self.scheduledTrack = "–"
             }
             
         } else {
@@ -372,16 +377,9 @@ class ICEConnection {
                 completion(metaData)
             } else {
 #if DEBUG
-                completion(nil)
-                return
-                let random = Int.random(in: 1...1)
+
                 
-                if random == 2 {
-                    completion(nil)
-                    return
-                }
-                
-                if let data = try? Data(contentsOf: Bundle.main.url(forResource: "tripInfo\(random)", withExtension: "json")!) {
+                if let data = try? Data(contentsOf: Bundle.main.url(forResource: "paris", withExtension: "json")!) {
                     let jsonResult = try? JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
                     if let jsonResult = jsonResult as? [String: Any] {
                         let metaData = TrainTripData(dict: jsonResult)
