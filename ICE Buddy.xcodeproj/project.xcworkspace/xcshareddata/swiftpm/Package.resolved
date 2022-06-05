@@ -1,52 +1,41 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "Alamofire",
-        "repositoryURL": "https://github.com/Alamofire/Alamofire",
-        "state": {
-          "branch": null,
-          "revision": "d120af1e8638c7da36c8481fd61a66c0c08dc4fc",
-          "version": "5.4.4"
-        }
-      },
-      {
-        "package": "FredKit",
-        "repositoryURL": "https://github.com/frogg/FredKit",
-        "state": {
-          "branch": null,
-          "revision": "e4741009fad55236dd3d53f3cc4c2a6e13f19cac",
-          "version": "0.1.28"
-        }
-      },
-      {
-        "package": "FredKitAnalytics",
-        "repositoryURL": "https://github.com/frogg/FredKitAnalytics.git",
-        "state": {
-          "branch": null,
-          "revision": "23e7a95720f4803d38acebc1d73ec4b5c9324791",
-          "version": "0.0.10"
-        }
-      },
-      {
-        "package": "LaunchAtLogin",
-        "repositoryURL": "https://github.com/sindresorhus/LaunchAtLogin",
-        "state": {
-          "branch": null,
-          "revision": "e8171b3e38a2816f579f58f3dac1522aa39efe41",
-          "version": "4.2.0"
-        }
-      },
-      {
-        "package": "MatomoTracker",
-        "repositoryURL": "https://github.com/matomo-org/matomo-sdk-ios.git",
-        "state": {
-          "branch": null,
-          "revision": "8abf0b655d4d3a937f96b8a6e0b66e21cb6b312d",
-          "version": "7.4.1"
-        }
+  "pins" : [
+    {
+      "identity" : "alamofire",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Alamofire/Alamofire",
+      "state" : {
+        "revision" : "d120af1e8638c7da36c8481fd61a66c0c08dc4fc",
+        "version" : "5.4.4"
       }
-    ]
-  },
-  "version": 1
+    },
+    {
+      "identity" : "fredkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/frogg/FredKit",
+      "state" : {
+        "revision" : "bb465a18b47ed01c8487e08c3a106e89e6ad0b81",
+        "version" : "0.1.42"
+      }
+    },
+    {
+      "identity" : "launchatlogin",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/sindresorhus/LaunchAtLogin",
+      "state" : {
+        "revision" : "e8171b3e38a2816f579f58f3dac1522aa39efe41",
+        "version" : "4.2.0"
+      }
+    },
+    {
+      "identity" : "train-api-swift-package",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ICE-Buddy/Train-API-Swift-Package",
+      "state" : {
+        "revision" : "028c3f41a8813caf01a2571e7042cf781b67586b",
+        "version" : "1.0.4"
+      }
+    }
+  ],
+  "version" : 2
 }

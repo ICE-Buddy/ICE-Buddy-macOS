@@ -24,6 +24,15 @@ class ICE_BuddyTests: XCTestCase {
         
         let tz9453 = TrainType.trainType(from: "Tz9453")
         XCTAssertEqual(tz9453, .BR412)
+        
+        let tz_9453 = TrainType.trainType(from: "Tz 9453")
+        XCTAssertEqual(tz_9453, .BR412)
+        
+        let ICE0334 = TrainType.trainType(from: "ICE0334")
+        XCTAssertEqual(ICE0334, .BR403)
+        
+        let ICE1159 = TrainType.trainType(from: "ICE1159")
+        XCTAssertEqual(ICE1159, .BR411)
     }
 
     func testPerformanceExample() throws {

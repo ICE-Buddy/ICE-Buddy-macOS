@@ -6,6 +6,7 @@
 //
 
 import Cocoa
+import Train_API
 
 class JourneyStopCustomViewController: NSViewController {
     
@@ -19,7 +20,7 @@ class JourneyStopCustomViewController: NSViewController {
     @IBOutlet weak var trackLabel: NSTextField!
     @IBOutlet weak var delayLabel: NSTextField!
     
-    init(stopIndex: Int, journey: TrainTripData) {
+    init(stopIndex: Int, journey: TripData) {
         self.stopIndex = stopIndex
         self.journey = journey
         super.init(nibName: "JourneyStopCustomViewController", bundle: Bundle.main)
@@ -31,7 +32,7 @@ class JourneyStopCustomViewController: NSViewController {
     
 
     var stopIndex: Int
-    var journey: TrainTripData {
+    var journey: TripData {
         didSet {
             self.reloadUI()
         }

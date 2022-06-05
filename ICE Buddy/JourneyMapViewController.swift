@@ -7,12 +7,13 @@
 
 import Cocoa
 import MapKit
+import Train_API
 
 class JourneyMapViewController: NSViewController {
 
     @IBOutlet weak var mapView: MKMapView!
     
-    var stops: [Stop] = [] {
+    var stops: [JourneyStop] = [] {
         didSet {
             mapView.removeOverlays(mapView.overlays)
             let coordinates = stops.map { stop in

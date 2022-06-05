@@ -17,22 +17,15 @@
 		51444B92274426AF00AD2C68 /* ICE_BuddyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51444B91274426AF00AD2C68 /* ICE_BuddyUITestsLaunchTests.swift */; };
 		51444BA02744271400AD2C68 /* MenuBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51444B9F2744271400AD2C68 /* MenuBarController.swift */; };
 		51444BA3274429B900AD2C68 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 51444BA2274429B900AD2C68 /* Alamofire */; };
-		51444BA527442A6700AD2C68 /* ICEConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51444BA427442A6700AD2C68 /* ICEConnection.swift */; };
 		51444BA8274438BE00AD2C68 /* ICEHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51444BA6274438BE00AD2C68 /* ICEHeader.swift */; };
 		51444BA9274438BE00AD2C68 /* ICEHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51444BA7274438BE00AD2C68 /* ICEHeader.xib */; };
 		51444BAC2744423300AD2C68 /* JourneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51444BAA2744423300AD2C68 /* JourneyViewController.swift */; };
 		51444BAD2744423300AD2C68 /* JourneyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51444BAB2744423300AD2C68 /* JourneyViewController.xib */; };
 		51444BB42744546A00AD2C68 /* FredKit in Frameworks */ = {isa = PBXBuildFile; productRef = 51444BB32744546A00AD2C68 /* FredKit */; };
-		51444BB62744F3CE00AD2C68 /* status.json in Resources */ = {isa = PBXBuildFile; fileRef = 51444BB52744F3CE00AD2C68 /* status.json */; };
 		51444BBF2745086000AD2C68 /* JourneyStopCustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51444BBD2745086000AD2C68 /* JourneyStopCustomViewController.swift */; };
 		51444BC02745086000AD2C68 /* JourneyStopCustomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51444BBE2745086000AD2C68 /* JourneyStopCustomViewController.xib */; };
 		51444BC327451D9800AD2C68 /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 51444BC227451D9800AD2C68 /* LaunchAtLogin */; };
-		51444BC62745270E00AD2C68 /* tripInfo1.json in Resources */ = {isa = PBXBuildFile; fileRef = 51444BC42745270E00AD2C68 /* tripInfo1.json */; };
-		51444BC72745270E00AD2C68 /* tripInfo2.json in Resources */ = {isa = PBXBuildFile; fileRef = 51444BC52745270E00AD2C68 /* tripInfo2.json */; };
-		51444BCE27454FEC00AD2C68 /* FredKitAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 51444BCD27454FEC00AD2C68 /* FredKitAnalytics */; };
-		514B851C27EBA1D000838DAE /* paris.json in Resources */ = {isa = PBXBuildFile; fileRef = 514B851B27EBA1D000838DAE /* paris.json */; };
-		5165213927E223B300E75EF5 /* ice.json in Resources */ = {isa = PBXBuildFile; fileRef = 5165213827E223B300E75EF5 /* ice.json */; };
-		51CA45322773D66B0022902A /* sbahnStuttgart.json in Resources */ = {isa = PBXBuildFile; fileRef = 51CA45312773D66B0022902A /* sbahnStuttgart.json */; };
+		5195A29F284D36EF00AE54AB /* Train-API-Swift-Package in Frameworks */ = {isa = PBXBuildFile; productRef = 5195A29E284D36EF00AE54AB /* Train-API-Swift-Package */; };
 		51F66F22274A600A0076A3F5 /* SharingMenuitem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F66F21274A600A0076A3F5 /* SharingMenuitem.swift */; };
 		51F66F25274A796C0076A3F5 /* JourneyMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F66F23274A796C0076A3F5 /* JourneyMapViewController.swift */; };
 		51F66F26274A796C0076A3F5 /* JourneyMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51F66F24274A796C0076A3F5 /* JourneyMapViewController.xib */; };
@@ -70,19 +63,13 @@
 		51444B91274426AF00AD2C68 /* ICE_BuddyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICE_BuddyUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		51444B9E274426CD00AD2C68 /* ICE-Buddy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "ICE-Buddy-Info.plist"; sourceTree = SOURCE_ROOT; };
 		51444B9F2744271400AD2C68 /* MenuBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarController.swift; sourceTree = "<group>"; };
-		51444BA427442A6700AD2C68 /* ICEConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICEConnection.swift; sourceTree = "<group>"; };
 		51444BA6274438BE00AD2C68 /* ICEHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICEHeader.swift; sourceTree = "<group>"; };
 		51444BA7274438BE00AD2C68 /* ICEHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ICEHeader.xib; sourceTree = "<group>"; };
 		51444BAA2744423300AD2C68 /* JourneyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyViewController.swift; sourceTree = "<group>"; };
 		51444BAB2744423300AD2C68 /* JourneyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JourneyViewController.xib; sourceTree = "<group>"; };
-		51444BB52744F3CE00AD2C68 /* status.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = status.json; sourceTree = "<group>"; };
 		51444BBD2745086000AD2C68 /* JourneyStopCustomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyStopCustomViewController.swift; sourceTree = "<group>"; };
 		51444BBE2745086000AD2C68 /* JourneyStopCustomViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JourneyStopCustomViewController.xib; sourceTree = "<group>"; };
-		51444BC42745270E00AD2C68 /* tripInfo1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tripInfo1.json; sourceTree = "<group>"; };
-		51444BC52745270E00AD2C68 /* tripInfo2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tripInfo2.json; sourceTree = "<group>"; };
-		514B851B27EBA1D000838DAE /* paris.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = paris.json; sourceTree = "<group>"; };
-		5165213827E223B300E75EF5 /* ice.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ice.json; sourceTree = "<group>"; };
-		51CA45312773D66B0022902A /* sbahnStuttgart.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sbahnStuttgart.json; sourceTree = "<group>"; };
+		51B1CB90284D22F50039671B /* Train-API */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "Train-API"; path = "../Train-API"; sourceTree = "<group>"; };
 		51F66F21274A600A0076A3F5 /* SharingMenuitem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharingMenuitem.swift; sourceTree = "<group>"; };
 		51F66F23274A796C0076A3F5 /* JourneyMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyMapViewController.swift; sourceTree = "<group>"; };
 		51F66F24274A796C0076A3F5 /* JourneyMapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JourneyMapViewController.xib; sourceTree = "<group>"; };
@@ -93,8 +80,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51444BCE27454FEC00AD2C68 /* FredKitAnalytics in Frameworks */,
 				51444BC327451D9800AD2C68 /* LaunchAtLogin in Frameworks */,
+				5195A29F284D36EF00AE54AB /* Train-API-Swift-Package in Frameworks */,
 				51444BB42744546A00AD2C68 /* FredKit in Frameworks */,
 				51444BA3274429B900AD2C68 /* Alamofire in Frameworks */,
 			);
@@ -124,6 +111,7 @@
 				51444B84274426AF00AD2C68 /* ICE BuddyTests */,
 				51444B8E274426AF00AD2C68 /* ICE BuddyUITests */,
 				51444B71274426AE00AD2C68 /* Products */,
+				51B1CB8F284D22F50039671B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -142,12 +130,6 @@
 			children = (
 				51444B9E274426CD00AD2C68 /* ICE-Buddy-Info.plist */,
 				51444B73274426AE00AD2C68 /* AppDelegate.swift */,
-				51444BB52744F3CE00AD2C68 /* status.json */,
-				5165213827E223B300E75EF5 /* ice.json */,
-				51444BC42745270E00AD2C68 /* tripInfo1.json */,
-				51444BC52745270E00AD2C68 /* tripInfo2.json */,
-				51CA45312773D66B0022902A /* sbahnStuttgart.json */,
-				514B851B27EBA1D000838DAE /* paris.json */,
 				511D62BE274553FE001C8399 /* AboutViewController.swift */,
 				511D62BF274553FE001C8399 /* AboutViewController.xib */,
 				51444B9F2744271400AD2C68 /* MenuBarController.swift */,
@@ -159,7 +141,6 @@
 				51444BAB2744423300AD2C68 /* JourneyViewController.xib */,
 				51F66F23274A796C0076A3F5 /* JourneyMapViewController.swift */,
 				51F66F24274A796C0076A3F5 /* JourneyMapViewController.xib */,
-				51444BA427442A6700AD2C68 /* ICEConnection.swift */,
 				51F66F21274A600A0076A3F5 /* SharingMenuitem.swift */,
 				51444B77274426AF00AD2C68 /* Assets.xcassets */,
 				511D62C227455470001C8399 /* Main.storyboard */,
@@ -185,6 +166,14 @@
 			path = "ICE BuddyUITests";
 			sourceTree = "<group>";
 		};
+		51B1CB8F284D22F50039671B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				51B1CB90284D22F50039671B /* Train-API */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -206,7 +195,7 @@
 				51444BA2274429B900AD2C68 /* Alamofire */,
 				51444BB32744546A00AD2C68 /* FredKit */,
 				51444BC227451D9800AD2C68 /* LaunchAtLogin */,
-				51444BCD27454FEC00AD2C68 /* FredKitAnalytics */,
+				5195A29E284D36EF00AE54AB /* Train-API-Swift-Package */,
 			);
 			productName = "ICE Buddy";
 			productReference = 51444B70274426AE00AD2C68 /* ICE Buddy.app */;
@@ -284,7 +273,7 @@
 				51444BA1274429B900AD2C68 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				51444BB22744546A00AD2C68 /* XCRemoteSwiftPackageReference "FredKit" */,
 				51444BC127451D9800AD2C68 /* XCRemoteSwiftPackageReference "LaunchAtLogin" */,
-				51444BCC27454FEC00AD2C68 /* XCRemoteSwiftPackageReference "FredKitAnalytics" */,
+				5195A29D284D36EF00AE54AB /* XCRemoteSwiftPackageReference "Train-API-Swift-Package" */,
 			);
 			productRefGroup = 51444B71274426AE00AD2C68 /* Products */;
 			projectDirPath = "";
@@ -304,17 +293,11 @@
 			files = (
 				51444B78274426AF00AD2C68 /* Assets.xcassets in Resources */,
 				51444BAD2744423300AD2C68 /* JourneyViewController.xib in Resources */,
-				51CA45322773D66B0022902A /* sbahnStuttgart.json in Resources */,
 				51444BA9274438BE00AD2C68 /* ICEHeader.xib in Resources */,
-				51444BC72745270E00AD2C68 /* tripInfo2.json in Resources */,
-				5165213927E223B300E75EF5 /* ice.json in Resources */,
-				51444BC62745270E00AD2C68 /* tripInfo1.json in Resources */,
-				514B851C27EBA1D000838DAE /* paris.json in Resources */,
 				51444BC02745086000AD2C68 /* JourneyStopCustomViewController.xib in Resources */,
 				511D62C327455470001C8399 /* Main.storyboard in Resources */,
 				511D62C1274553FE001C8399 /* AboutViewController.xib in Resources */,
 				51F66F26274A796C0076A3F5 /* JourneyMapViewController.xib in Resources */,
-				51444BB62744F3CE00AD2C68 /* status.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,7 +348,6 @@
 				51444B74274426AE00AD2C68 /* AppDelegate.swift in Sources */,
 				51444BA8274438BE00AD2C68 /* ICEHeader.swift in Sources */,
 				51444BBF2745086000AD2C68 /* JourneyStopCustomViewController.swift in Sources */,
-				51444BA527442A6700AD2C68 /* ICEConnection.swift in Sources */,
 				511D62C0274553FE001C8399 /* AboutViewController.swift in Sources */,
 				51F66F25274A796C0076A3F5 /* JourneyMapViewController.swift in Sources */,
 				51444BAC2744423300AD2C68 /* JourneyViewController.swift in Sources */,
@@ -528,8 +510,8 @@
 				CODE_SIGN_ENTITLEMENTS = "ICE Buddy/ICE_Buddy.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 13;
-				DEVELOPMENT_TEAM = CS5SL7ZTHZ;
+				CURRENT_PROJECT_VERSION = 15;
+				DEVELOPMENT_TEAM = 52U6XAJSSF;
 				ENABLE_HARDENED_RUNTIME = YES;
 				EXCLUDED_SOURCE_FILE_NAMES = (
 					FredKit/UI/FredKitSimpleDetailDisclosureTableViewCell.xib,
@@ -546,7 +528,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 1.2.1;
+				MARKETING_VERSION = 1.2.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "wtf.riedel.ICE-Buddy";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -562,8 +544,8 @@
 				CODE_SIGN_ENTITLEMENTS = "ICE Buddy/ICE_Buddy.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 13;
-				DEVELOPMENT_TEAM = CS5SL7ZTHZ;
+				CURRENT_PROJECT_VERSION = 15;
+				DEVELOPMENT_TEAM = 52U6XAJSSF;
 				ENABLE_HARDENED_RUNTIME = YES;
 				EXCLUDED_SOURCE_FILE_NAMES = (
 					tripInfo2.json,
@@ -582,7 +564,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 1.2.1;
+				MARKETING_VERSION = 1.2.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "wtf.riedel.ICE-Buddy";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -753,12 +735,12 @@
 				minimumVersion = 4.0.0;
 			};
 		};
-		51444BCC27454FEC00AD2C68 /* XCRemoteSwiftPackageReference "FredKitAnalytics" */ = {
+		5195A29D284D36EF00AE54AB /* XCRemoteSwiftPackageReference "Train-API-Swift-Package" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/frogg/FredKitAnalytics.git";
+			repositoryURL = "https://github.com/ICE-Buddy/Train-API-Swift-Package";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.0.10;
+				minimumVersion = 1.0.4;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -779,10 +761,10 @@
 			package = 51444BC127451D9800AD2C68 /* XCRemoteSwiftPackageReference "LaunchAtLogin" */;
 			productName = LaunchAtLogin;
 		};
-		51444BCD27454FEC00AD2C68 /* FredKitAnalytics */ = {
+		5195A29E284D36EF00AE54AB /* Train-API-Swift-Package */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 51444BCC27454FEC00AD2C68 /* XCRemoteSwiftPackageReference "FredKitAnalytics" */;
-			productName = FredKitAnalytics;
+			package = 5195A29D284D36EF00AE54AB /* XCRemoteSwiftPackageReference "Train-API-Swift-Package" */;
+			productName = "Train-API-Swift-Package";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

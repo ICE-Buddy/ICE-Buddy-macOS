@@ -9,9 +9,9 @@ import Foundation
 import AppKit
 import LaunchAtLogin
 import FredKit
-import FredKitAnalytics
 import UserNotifications
 import StoreKit
+import Train_API
 
 class MenuBarController: NSObject {
     
@@ -98,7 +98,7 @@ class MenuBarController: NSObject {
         }
     }
     
-    private func scheduleAusstiegsAlarm(for stop: Stop) {
+    private func scheduleAusstiegsAlarm(for stop: JourneyStop) {
         UNUserNotificationCenter.current().getNotificationSettings { (notificationSettings) in
             switch notificationSettings.authorizationStatus {
             case .notDetermined:
@@ -130,7 +130,7 @@ class MenuBarController: NSObject {
         }
     }
     
-    private func scheduleLocalNotification(stop: Stop) {
+    private func scheduleLocalNotification(stop: JourneyStop) {
         // Create Notification Content
         let notificationContent = UNMutableNotificationContent()
         
@@ -194,7 +194,7 @@ class MenuBarController: NSObject {
     }
     
     var refreshAusstiegsAlarmMenuNextTime = false
-    private func refreshAusstiegsalarmMenu(stops: [Stop]) {
+    private func refreshAusstiegsalarmMenu(stops: [JourneyStop]) {
         refreshAusstiegsAlarmMenuNextTime = false
         let submenu = NSMenu()
         let explaination = NSMenuItem(title: "Get reminded 10 mins before you reach your stop", action: nil, keyEquivalent: "")
@@ -449,7 +449,7 @@ class MenuBarController: NSObject {
                 let speedString = formatter.string(from: speed)
                 self.currentSpeedMenuItem.title = speedString
                 self.currentSpeedStatusItem?.button?.title = speedString
-                self.trainTypeMenuItem.title = "Train Model: \(metaData.trainType.humanReadableTrainType)"
+                self.trainTypeMenuItem.title = "Train Model: \(metaData.trainType.humanReadableTrainType) (TZN: \(metaData.trainId))"
                 
                 self.internetQualityMenuitem.title = "Internet Quality: \(metaData.internetConnection.localizedString)"
                 
@@ -527,8 +527,6 @@ extension MenuBarController: NSMenuDelegate {
         }
             
         self.refreshMetaData()
-        
-        FredKitAnalytics.trackViewController(viewControllerIds: ["Overview"])
         
         continousUpdateTimer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { _ in
             if self.isConnected {
