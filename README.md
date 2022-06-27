@@ -7,6 +7,8 @@ It connect’s to the trains‘ local server in order to get live travel data, l
 
 Download it for free from the [Mac AppStore](https://apps.apple.com/de/app/ice-buddy-for-your-menu-bar/id1595947689?l=en&mt=12)
 
+# Contribution Rules
+We encourage everyone to improve and enhance ICE buddy for all kinds of different train types and functionalities, but there is one rule: we only accept pull requests written while travaling on a train!!
 
 ![220104 screen](https://user-images.githubusercontent.com/5204169/172067056-45556072-69d7-4fa2-9ce0-a9c1d137e071.png)
 
