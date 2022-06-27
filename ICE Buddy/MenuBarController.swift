@@ -11,7 +11,8 @@ import LaunchAtLogin
 import FredKit
 import UserNotifications
 import StoreKit
-import Train_API
+import DBConnect
+
 
 class MenuBarController: NSObject {
     
@@ -85,10 +86,10 @@ class MenuBarController: NSObject {
     }
     
     private func refreshAusstiegsAlarmNotification() {
-        ICEConnection.shared.loadCurrentTripData { tripData in
-            if let tripData = tripData {
+        ICEDataController.shared.loadTripData { tripResponse, error in
+            if let tripData = tripResponse?.trip {
                 let exitStop = tripData.stops.first { stop in
-                    stop.name == MenuBarController.ausstiegsAlarmStation
+                    stop.station.name == MenuBarController.ausstiegsAlarmStation
                 }
                 
                 if let stop = exitStop {
@@ -134,14 +135,14 @@ class MenuBarController: NSObject {
         // Create Notification Content
         let notificationContent = UNMutableNotificationContent()
         
-        if let actualArrivalTime = stop.actualArrivalTime {
+        if let actualArrivalTime = stop.timetable.actualArrivalTimeDate {
             // Configure Notification Content
             
 //            let timeToArrive = actualArrivalTime.timeIntervalSinceNow
 //            let minutesToArrive = Int(timeToArrive / TimeInterval.minute)
             
-            notificationContent.title = "Ausstiegsalarm \(stop.name)"
-            notificationContent.subtitle = "Arriving in 10 mins on track \(stop.actualTrack)."
+            notificationContent.title = "Ausstiegsalarm \(stop.station.name)"
+            notificationContent.subtitle = "Arriving in 10 mins on track \(stop.track.actual)."
             notificationContent.body = "Thank you for traveling with ICE Buddy today."
             
             let triggerDate = actualArrivalTime.addingTimeInterval(-10 * TimeInterval.minute)
@@ -166,11 +167,13 @@ class MenuBarController: NSObject {
     
     private func refreshSpeedInStatusBar() {
         let statusBar = NSStatusBar.system
-        ICEConnection.shared.loadCurrentTrainData { iceMetaData in
-            if let iceMetaData = iceMetaData {
+        
+        ICEDataController.shared.loadStatus { status, error in
+            if let status = status {
                 self.currentSpeedStatusItem = statusBar.statusItem(withLength: NSStatusItem.variableLength)
                 self.currentSpeedStatusItem?.autosaveName = "current-speed"
-                let speed = Measurement(value: iceMetaData.speed, unit: UnitSpeed.kilometersPerHour)
+                
+                let speed = Measurement(value: status.speed, unit: UnitSpeed.kilometersPerHour)
                 let formatter = MeasurementFormatter()
                 self.currentSpeedStatusItem?.button?.title = formatter.string(from: speed)
                 let speedMenu = NSMenu()
@@ -184,7 +187,6 @@ class MenuBarController: NSObject {
                 speedMenu.addItem(infoItem)
                 
                 self.currentSpeedStatusItem?.menu = speedMenu
-                
             } else {
                 if let currentSpeedStatusItem = self.currentSpeedStatusItem {
                     statusBar.removeStatusItem(currentSpeedStatusItem)
@@ -202,9 +204,9 @@ class MenuBarController: NSObject {
         submenu.addItem(NSMenuItem.separator())
         
         let availableStopsToSelect = stops.map { stop -> NSMenuItem in
-            let menuItem = NSMenuItem(title: stop.name, action: #selector(didSelectStop), keyEquivalent: "")
-            if let actualArrivalTime = stop.actualArrivalTime {
-                if stop.name == MenuBarController.ausstiegsAlarmStation {
+            let menuItem = NSMenuItem(title: stop.station.name, action: #selector(didSelectStop), keyEquivalent: "")
+            if let actualArrivalTime = stop.timetable.actualArrivalTimeDate {
+                if stop.station.name == MenuBarController.ausstiegsAlarmStation {
                     menuItem.state = .on
                 } else {
                     menuItem.state = .off
@@ -441,41 +443,53 @@ class MenuBarController: NSObject {
             disconnectedLaunchAtLoginMenuItem.state = .off
         }
         
-        ICEConnection.shared.loadCurrentTrainData { metaData in
-            
-            if let metaData = metaData {
-                let speed = Measurement(value: metaData.speed, unit: UnitSpeed.kilometersPerHour)
+        ICEDataController.shared.loadStatus { status, error in
+            if let status = status {
+                
+                let speed = Measurement(value: status.speed, unit: UnitSpeed.kilometersPerHour)
                 let formatter = MeasurementFormatter()
                 let speedString = formatter.string(from: speed)
                 self.currentSpeedMenuItem.title = speedString
                 self.currentSpeedStatusItem?.button?.title = speedString
-                self.trainTypeMenuItem.title = "Train Model: \(metaData.trainType.humanReadableTrainType) (TZN: \(metaData.trainId))"
                 
-                self.internetQualityMenuitem.title = "Internet Quality: \(metaData.internetConnection.localizedString)"
+                let trainType = TrainType.trainType(from: status.tzn)
+                self.trainTypeMenuItem.title = "Train Model: \(trainType.humanReadableTrainType) (TZN: \(status.tzn))"
                 
-
-                self.lastUpdateMenuitem.title = "Updated Infos: \(metaData.timestamp.humanReadableDateAndTimeString)"
+                if let internetQuality = status.connectivity.currentState {
+                    self.internetQualityMenuitem.title = "Internet Quality: \(internetQuality)"
+                } else {
+                    self.internetQualityMenuitem.title = "Internet Quality: Unknown"
+                }
                 
-                self.iceHeaderVC.imageView.image = metaData.trainType.trainIcon
+                
+                self.lastUpdateMenuitem.title = "Updated Infos: \(Date().humanReadableDateAndTimeString)"
+                
+                self.iceHeaderVC.imageView.image = trainType.trainIcon
                 self.iceStatusItem?.menu = self.menu
             } else {
                 self.showDisconnectedMenu()
             }
         }
         
-        ICEConnection.shared.loadCurrentTripData { tripData in
-            
-            if let tripData = tripData, let origin = tripData.startStop, let destination = tripData.finalStop {
+        ICEDataController.shared.loadTripData { tripResponse, error in
+            if let tripData = tripResponse?.trip {
                 self.mapVC.stops = tripData.stops
-                self.connectionMenuItem.title = "\(tripData.trainId): \(origin.name) → \(destination.name)"
+                if let origin = tripData.stops.first, let destination = tripData.stops.last {
+                    self.connectionMenuItem.title = "\(tripData.trainType) \(tripData.vzn): \(origin.station.name) → \(destination.station.name)"
+                }
+                    
+                
                 
                 if self.refreshAusstiegsAlarmMenuNextTime {
                     self.refreshAusstiegsalarmMenu(stops: tripData.stops)
                 }
                 
-                if let nextStop = tripData.nextStop {
-                    self.nextStopValueMenuItem.title = "\(nextStop.humanReadableArrivalTime), \(nextStop.name)"
-                    self.nextStopTrackMenuItem.title = "Track: \(nextStop.actualTrack)"
+                if let nextStop = tripData.stops.nextStop {
+                    if let humanReadableArrivalTime = nextStop.timetable.actualArrivalTimeDate?.minuteTimeString {
+                        self.nextStopValueMenuItem.title = "\(humanReadableArrivalTime), \(nextStop.station.name)"
+                    }
+                    
+                    self.nextStopTrackMenuItem.title = "Track: \(nextStop.track.actual)"
                 }
                 
                 if self.journeyViewControllers.isEmpty {
@@ -541,5 +555,13 @@ extension MenuBarController: NSMenuDelegate {
     
     func menuDidClose(_ menu: NSMenu) {
         continousUpdateTimer?.invalidate()
+    }
+}
+
+extension Array where Element == JourneyStop {
+    var nextStop: JourneyStop? {
+        self.filter({ stop in
+            return !stop.info.passed
+        }).first
     }
 }

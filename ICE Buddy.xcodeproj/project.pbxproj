@@ -25,7 +25,8 @@
 		51444BBF2745086000AD2C68 /* JourneyStopCustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51444BBD2745086000AD2C68 /* JourneyStopCustomViewController.swift */; };
 		51444BC02745086000AD2C68 /* JourneyStopCustomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51444BBE2745086000AD2C68 /* JourneyStopCustomViewController.xib */; };
 		51444BC327451D9800AD2C68 /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 51444BC227451D9800AD2C68 /* LaunchAtLogin */; };
-		5195A29F284D36EF00AE54AB /* Train-API-Swift-Package in Frameworks */ = {isa = PBXBuildFile; productRef = 5195A29E284D36EF00AE54AB /* Train-API-Swift-Package */; };
+		51908180286A294000A1BD1B /* DBConnect in Frameworks */ = {isa = PBXBuildFile; productRef = 5190817F286A294000A1BD1B /* DBConnect */; };
+		51908182286A294000A1BD1B /* DBTimetable in Frameworks */ = {isa = PBXBuildFile; productRef = 51908181286A294000A1BD1B /* DBTimetable */; };
 		51F66F22274A600A0076A3F5 /* SharingMenuitem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F66F21274A600A0076A3F5 /* SharingMenuitem.swift */; };
 		51F66F25274A796C0076A3F5 /* JourneyMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F66F23274A796C0076A3F5 /* JourneyMapViewController.swift */; };
 		51F66F26274A796C0076A3F5 /* JourneyMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51F66F24274A796C0076A3F5 /* JourneyMapViewController.xib */; };
@@ -81,8 +82,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				51444BC327451D9800AD2C68 /* LaunchAtLogin in Frameworks */,
-				5195A29F284D36EF00AE54AB /* Train-API-Swift-Package in Frameworks */,
+				51908180286A294000A1BD1B /* DBConnect in Frameworks */,
 				51444BB42744546A00AD2C68 /* FredKit in Frameworks */,
+				51908182286A294000A1BD1B /* DBTimetable in Frameworks */,
 				51444BA3274429B900AD2C68 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -195,7 +197,8 @@
 				51444BA2274429B900AD2C68 /* Alamofire */,
 				51444BB32744546A00AD2C68 /* FredKit */,
 				51444BC227451D9800AD2C68 /* LaunchAtLogin */,
-				5195A29E284D36EF00AE54AB /* Train-API-Swift-Package */,
+				5190817F286A294000A1BD1B /* DBConnect */,
+				51908181286A294000A1BD1B /* DBTimetable */,
 			);
 			productName = "ICE Buddy";
 			productReference = 51444B70274426AE00AD2C68 /* ICE Buddy.app */;
@@ -273,7 +276,7 @@
 				51444BA1274429B900AD2C68 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				51444BB22744546A00AD2C68 /* XCRemoteSwiftPackageReference "FredKit" */,
 				51444BC127451D9800AD2C68 /* XCRemoteSwiftPackageReference "LaunchAtLogin" */,
-				5195A29D284D36EF00AE54AB /* XCRemoteSwiftPackageReference "Train-API-Swift-Package" */,
+				5190817E286A294000A1BD1B /* XCRemoteSwiftPackageReference "DBConnect" */,
 			);
 			productRefGroup = 51444B71274426AE00AD2C68 /* Products */;
 			projectDirPath = "";
@@ -735,12 +738,12 @@
 				minimumVersion = 4.0.0;
 			};
 		};
-		5195A29D284D36EF00AE54AB /* XCRemoteSwiftPackageReference "Train-API-Swift-Package" */ = {
+		5190817E286A294000A1BD1B /* XCRemoteSwiftPackageReference "DBConnect" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/ICE-Buddy/Train-API-Swift-Package";
+			repositoryURL = "https://github.com/ICE-Buddy/DBConnect";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.4;
+				branch = main;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -761,10 +764,15 @@
 			package = 51444BC127451D9800AD2C68 /* XCRemoteSwiftPackageReference "LaunchAtLogin" */;
 			productName = LaunchAtLogin;
 		};
-		5195A29E284D36EF00AE54AB /* Train-API-Swift-Package */ = {
+		5190817F286A294000A1BD1B /* DBConnect */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 5195A29D284D36EF00AE54AB /* XCRemoteSwiftPackageReference "Train-API-Swift-Package" */;
-			productName = "Train-API-Swift-Package";
+			package = 5190817E286A294000A1BD1B /* XCRemoteSwiftPackageReference "DBConnect" */;
+			productName = DBConnect;
+		};
+		51908181286A294000A1BD1B /* DBTimetable */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5190817E286A294000A1BD1B /* XCRemoteSwiftPackageReference "DBConnect" */;
+			productName = DBTimetable;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -6,7 +6,7 @@
 //
 
 import Cocoa
-import Train_API
+import DBConnect
 
 class JourneyStopCustomViewController: NSViewController {
     
@@ -20,7 +20,7 @@ class JourneyStopCustomViewController: NSViewController {
     @IBOutlet weak var trackLabel: NSTextField!
     @IBOutlet weak var delayLabel: NSTextField!
     
-    init(stopIndex: Int, journey: TripData) {
+    init(stopIndex: Int, journey: Trip) {
         self.stopIndex = stopIndex
         self.journey = journey
         super.init(nibName: "JourneyStopCustomViewController", bundle: Bundle.main)
@@ -32,7 +32,7 @@ class JourneyStopCustomViewController: NSViewController {
     
 
     var stopIndex: Int
-    var journey: TripData {
+    var journey: Trip {
         didSet {
             self.reloadUI()
         }
@@ -41,7 +41,7 @@ class JourneyStopCustomViewController: NSViewController {
     private func reloadUI() {
         let stop = journey.stops[stopIndex]
         
-        if stop.passed {
+        if stop.info.passed {
             self.stopNameLabel.textColor = NSColor.tertiaryLabelColor
             self.topSegmentImageView.image = NSImage(named: "stop_badge_grey")
             self.bottomSegmentImageView.image = NSImage(named: "stop_badge_grey")
@@ -53,23 +53,23 @@ class JourneyStopCustomViewController: NSViewController {
             self.mainSegmentImageView.image = NSImage(named: "stop_icon")
         }
         
-        if stop.departureDelay == "" {
+        if stop.timetable.departureDelay == "" {
             self.delayLabel.isHidden = true
         } else {
             self.delayLabel.isHidden = false
-            self.delayLabel.stringValue = stop.departureDelay
+            self.delayLabel.stringValue = stop.timetable.departureDelay
         }
         
-        if stop.name == MenuBarController.ausstiegsAlarmStation {
+        if stop.station.name == MenuBarController.ausstiegsAlarmStation {
             ausstiegsAlarmIcon.isHidden = false
         } else {
             ausstiegsAlarmIcon.isHidden = true
         }
         
-        self.stopNameLabel.stringValue = stop.name
-        self.trackLabel.stringValue = "Gleis \(stop.actualTrack)"
+        self.stopNameLabel.stringValue = stop.station.name
+        self.trackLabel.stringValue = "Gleis \(stop.track.actual)"
         
-        self.arriveTimeLabel.stringValue = stop.humanReadableArrivalTime
+        self.arriveTimeLabel.stringValue = stop.timetable.actualArrivalTimeDate?.minuteTimeString ?? "–"
     }
     
     override func viewDidLoad() {

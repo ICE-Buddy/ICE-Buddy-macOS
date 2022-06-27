@@ -7,7 +7,7 @@
 
 import Cocoa
 import MapKit
-import Train_API
+import DBConnect
 
 class JourneyMapViewController: NSViewController {
 
@@ -16,10 +16,13 @@ class JourneyMapViewController: NSViewController {
     var stops: [JourneyStop] = [] {
         didSet {
             mapView.removeOverlays(mapView.overlays)
-            let coordinates = stops.map { stop in
-                return stop.coordinate
+            let coordinates = stops.compactMap { stop in
+                return stop.station.geocoordinates
             }
-            let polyLine = MKPolyline(coordinates: coordinates, count: coordinates.count)
+            let locationCoordinates = coordinates.map { coordinate in
+                return CLLocationCoordinate2D(latitude: coordinate.latitude, longitude: coordinate.longitude)
+            }
+            let polyLine = MKPolyline(coordinates: locationCoordinates, count: coordinates.count)
             mapView.addOverlay(polyLine)
         }
     }
