@@ -8,21 +8,19 @@
 import Cocoa
 import MapKit
 import DBConnect
+import TrainConnect
 
 class JourneyMapViewController: NSViewController {
 
     @IBOutlet weak var mapView: MKMapView!
     
-    var stops: [JourneyStop] = [] {
+    var stops: [TrainStop] = [] {
         didSet {
             mapView.removeOverlays(mapView.overlays)
             let coordinates = stops.compactMap { stop in
-                return stop.station.geocoordinates
+                return stop.trainStation.coordinates
             }
-            let locationCoordinates = coordinates.map { coordinate in
-                return CLLocationCoordinate2D(latitude: coordinate.latitude, longitude: coordinate.longitude)
-            }
-            let polyLine = MKPolyline(coordinates: locationCoordinates, count: coordinates.count)
+            let polyLine = MKPolyline(coordinates: coordinates, count: coordinates.count)
             mapView.addOverlay(polyLine)
         }
     }

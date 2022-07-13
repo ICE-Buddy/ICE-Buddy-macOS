@@ -25,11 +25,13 @@
 		51444BBF2745086000AD2C68 /* JourneyStopCustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51444BBD2745086000AD2C68 /* JourneyStopCustomViewController.swift */; };
 		51444BC02745086000AD2C68 /* JourneyStopCustomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51444BBE2745086000AD2C68 /* JourneyStopCustomViewController.xib */; };
 		51444BC327451D9800AD2C68 /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 51444BC227451D9800AD2C68 /* LaunchAtLogin */; };
-		51908180286A294000A1BD1B /* DBConnect in Frameworks */ = {isa = PBXBuildFile; productRef = 5190817F286A294000A1BD1B /* DBConnect */; };
-		51908182286A294000A1BD1B /* DBTimetable in Frameworks */ = {isa = PBXBuildFile; productRef = 51908181286A294000A1BD1B /* DBTimetable */; };
 		51F66F22274A600A0076A3F5 /* SharingMenuitem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F66F21274A600A0076A3F5 /* SharingMenuitem.swift */; };
 		51F66F25274A796C0076A3F5 /* JourneyMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F66F23274A796C0076A3F5 /* JourneyMapViewController.swift */; };
 		51F66F26274A796C0076A3F5 /* JourneyMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51F66F24274A796C0076A3F5 /* JourneyMapViewController.xib */; };
+		B33E70A2287F2F15007C0D57 /* DBConnect in Frameworks */ = {isa = PBXBuildFile; productRef = B33E70A1287F2F15007C0D57 /* DBConnect */; };
+		B33E70A4287F2F15007C0D57 /* DBTimetable in Frameworks */ = {isa = PBXBuildFile; productRef = B33E70A3287F2F15007C0D57 /* DBTimetable */; };
+		B33E70A6287F2F15007C0D57 /* SNCFConnect in Frameworks */ = {isa = PBXBuildFile; productRef = B33E70A5287F2F15007C0D57 /* SNCFConnect */; };
+		B33E70A8287F2F15007C0D57 /* TrainConnect in Frameworks */ = {isa = PBXBuildFile; productRef = B33E70A7287F2F15007C0D57 /* TrainConnect */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +76,7 @@
 		51F66F21274A600A0076A3F5 /* SharingMenuitem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharingMenuitem.swift; sourceTree = "<group>"; };
 		51F66F23274A796C0076A3F5 /* JourneyMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyMapViewController.swift; sourceTree = "<group>"; };
 		51F66F24274A796C0076A3F5 /* JourneyMapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JourneyMapViewController.xib; sourceTree = "<group>"; };
+		B33E70A0287F2D80007C0D57 /* DBConnect */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = DBConnect; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +84,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B33E70A8287F2F15007C0D57 /* TrainConnect in Frameworks */,
 				51444BC327451D9800AD2C68 /* LaunchAtLogin in Frameworks */,
-				51908180286A294000A1BD1B /* DBConnect in Frameworks */,
+				B33E70A6287F2F15007C0D57 /* SNCFConnect in Frameworks */,
+				B33E70A2287F2F15007C0D57 /* DBConnect in Frameworks */,
+				B33E70A4287F2F15007C0D57 /* DBTimetable in Frameworks */,
 				51444BB42744546A00AD2C68 /* FredKit in Frameworks */,
-				51908182286A294000A1BD1B /* DBTimetable in Frameworks */,
 				51444BA3274429B900AD2C68 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -112,6 +117,7 @@
 				51444B72274426AE00AD2C68 /* ICE Buddy */,
 				51444B84274426AF00AD2C68 /* ICE BuddyTests */,
 				51444B8E274426AF00AD2C68 /* ICE BuddyUITests */,
+				B33E70A0287F2D80007C0D57 /* DBConnect */,
 				51444B71274426AE00AD2C68 /* Products */,
 				51B1CB8F284D22F50039671B /* Frameworks */,
 			);
@@ -197,8 +203,10 @@
 				51444BA2274429B900AD2C68 /* Alamofire */,
 				51444BB32744546A00AD2C68 /* FredKit */,
 				51444BC227451D9800AD2C68 /* LaunchAtLogin */,
-				5190817F286A294000A1BD1B /* DBConnect */,
-				51908181286A294000A1BD1B /* DBTimetable */,
+				B33E70A1287F2F15007C0D57 /* DBConnect */,
+				B33E70A3287F2F15007C0D57 /* DBTimetable */,
+				B33E70A5287F2F15007C0D57 /* SNCFConnect */,
+				B33E70A7287F2F15007C0D57 /* TrainConnect */,
 			);
 			productName = "ICE Buddy";
 			productReference = 51444B70274426AE00AD2C68 /* ICE Buddy.app */;
@@ -276,7 +284,6 @@
 				51444BA1274429B900AD2C68 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				51444BB22744546A00AD2C68 /* XCRemoteSwiftPackageReference "FredKit" */,
 				51444BC127451D9800AD2C68 /* XCRemoteSwiftPackageReference "LaunchAtLogin" */,
-				5190817E286A294000A1BD1B /* XCRemoteSwiftPackageReference "DBConnect" */,
 			);
 			productRefGroup = 51444B71274426AE00AD2C68 /* Products */;
 			projectDirPath = "";
@@ -738,14 +745,6 @@
 				minimumVersion = 4.0.0;
 			};
 		};
-		5190817E286A294000A1BD1B /* XCRemoteSwiftPackageReference "DBConnect" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/ICE-Buddy/DBConnect";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -764,15 +763,21 @@
 			package = 51444BC127451D9800AD2C68 /* XCRemoteSwiftPackageReference "LaunchAtLogin" */;
 			productName = LaunchAtLogin;
 		};
-		5190817F286A294000A1BD1B /* DBConnect */ = {
+		B33E70A1287F2F15007C0D57 /* DBConnect */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 5190817E286A294000A1BD1B /* XCRemoteSwiftPackageReference "DBConnect" */;
 			productName = DBConnect;
 		};
-		51908181286A294000A1BD1B /* DBTimetable */ = {
+		B33E70A3287F2F15007C0D57 /* DBTimetable */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 5190817E286A294000A1BD1B /* XCRemoteSwiftPackageReference "DBConnect" */;
 			productName = DBTimetable;
+		};
+		B33E70A5287F2F15007C0D57 /* SNCFConnect */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SNCFConnect;
+		};
+		B33E70A7287F2F15007C0D57 /* TrainConnect */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TrainConnect;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

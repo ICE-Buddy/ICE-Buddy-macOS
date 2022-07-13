@@ -1,0 +1,3 @@
+[submodule "DBConnect"]
+	path = DBConnect
+	url = https://github.com/leoMehlig/DBConnect.git
