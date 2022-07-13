@@ -15,15 +15,15 @@ import DBConnect
 import TrainConnect
 import SNCFConnect
 
-let demoMode: Bool = true
+let demoMode: Bool = false
 
 class MenuBarController: NSObject {
     
     static let shared = MenuBarController()
     
     let dataController = CombinedDataController(controllers:
-                                                ICEDataController.shared
-//                                                TGVDataController.shared
+                                                ICEDataController.shared,
+                                                TGVDataController.shared
     )
     
     private var iceStatusItem: NSStatusItem?
