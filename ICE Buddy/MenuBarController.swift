@@ -186,9 +186,8 @@ class MenuBarController: NSObject {
                 self.currentSpeedStatusItem = statusBar.statusItem(withLength: NSStatusItem.variableLength)
                 self.currentSpeedStatusItem?.autosaveName = "current-speed"
                 
-                let speed = Measurement(value: status.speed, unit: UnitSpeed.kilometersPerHour)
                 let formatter = MeasurementFormatter()
-                self.currentSpeedStatusItem?.button?.title = formatter.string(from: speed)
+                self.currentSpeedStatusItem?.button?.title = formatter.string(from: status.currentSpeed)
                 let speedMenu = NSMenu()
 
                 
@@ -459,9 +458,8 @@ class MenuBarController: NSObject {
         self.dataController.loadTrainStatus(demoMode: demoMode) { status, error in
             if let status = status {
                 
-                let speed = Measurement(value: status.speed, unit: UnitSpeed.kilometersPerHour)
                 let formatter = MeasurementFormatter()
-                let speedString = formatter.string(from: speed)
+                let speedString = formatter.string(from: status.currentSpeed)
                 self.currentSpeedMenuItem.title = speedString
                 self.currentSpeedStatusItem?.button?.title = speedString
                 
