@@ -10,21 +10,12 @@
       }
     },
     {
-      "identity" : "dbconnect",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/ICE-Buddy/DBConnect",
-      "state" : {
-        "branch" : "main",
-        "revision" : "92dd01e9eeedd700920ffc89c7f58b8431b3cfd8"
-      }
-    },
-    {
       "identity" : "fredkit",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/frogg/FredKit",
       "state" : {
-        "revision" : "bb465a18b47ed01c8487e08c3a106e89e6ad0b81",
-        "version" : "0.1.42"
+        "revision" : "f8f1f4c03cf26f69f8efa3d0e164d76b73e4dccd",
+        "version" : "0.1.41"
       }
     },
     {
