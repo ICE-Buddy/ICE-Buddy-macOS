@@ -14,8 +14,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/frogg/FredKit",
       "state" : {
-        "revision" : "f8f1f4c03cf26f69f8efa3d0e164d76b73e4dccd",
-        "version" : "0.1.41"
+        "revision" : "7c22a5991eb597120a776378cd27bda2c15a3afe",
+        "version" : "0.1.49"
       }
     },
     {
@@ -32,8 +32,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Moya/Moya",
       "state" : {
-        "revision" : "9b906860e3c3c09032879465c471e6375829593f",
-        "version" : "15.0.0"
+        "revision" : "c263811c1f3dbf002be9bd83107f7cdc38992b26",
+        "version" : "15.0.3"
       }
     },
     {
@@ -50,8 +50,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/ReactiveX/RxSwift.git",
       "state" : {
-        "revision" : "b4307ba0b6425c0ba4178e138799946c3da594f8",
-        "version" : "6.5.0"
+        "revision" : "9dcaa4b333db437b0fbfaf453fad29069044a8b4",
+        "version" : "6.6.0"
       }
     }
   ],
