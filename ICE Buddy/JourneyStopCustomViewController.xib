@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="19529" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="22154" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="19529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="22154"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="JourneyStopCustomViewController" customModule="ICE_Buddy" customModuleProvider="target">
             <connections>
-                <outlet property="arriveTimeLabel" destination="ARd-fJ-jiR" id="PdO-Ej-HWN"/>
+                <outlet property="actualTimeLabel" destination="7VP-jg-Pym" id="r0B-F2-ZoX"/>
                 <outlet property="ausstiegsAlarmIcon" destination="Fm7-Tu-dXK" id="YVR-TV-oPO"/>
                 <outlet property="bottomSegmentImageView" destination="itf-2B-Py0" id="d4F-w7-oF2"/>
-                <outlet property="delayLabel" destination="7VP-jg-Pym" id="r0B-F2-ZoX"/>
                 <outlet property="mainSegmentImageView" destination="oUO-NY-mPM" id="1Sr-su-gnZ"/>
+                <outlet property="scheduledTimeLabel" destination="ARd-fJ-jiR" id="PdO-Ej-HWN"/>
                 <outlet property="stopNameLabel" destination="MUz-Zg-syW" id="8Vc-y7-FV6"/>
                 <outlet property="topSegmentImageView" destination="T42-m2-47b" id="HBd-pR-AHe"/>
                 <outlet property="trackLabel" destination="mfo-hb-yTJ" id="Zsh-PL-HEQ"/>
@@ -21,8 +21,8 @@
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
-        <customView misplaced="YES" id="Hz6-mo-xeY">
-            <rect key="frame" x="0.0" y="0.0" width="333" height="33"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="333" height="32"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
                 <imageView horizontalHuggingPriority="246" verticalHuggingPriority="246" horizontalCompressionResistancePriority="744" verticalCompressionResistancePriority="742" translatesAutoresizingMaskIntoConstraints="NO" id="oUO-NY-mPM">
@@ -33,12 +33,12 @@
                     </constraints>
                     <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="stop_icon" id="NHg-3Q-lWx"/>
                 </imageView>
-                <textField horizontalHuggingPriority="246" verticalHuggingPriority="750" horizontalCompressionResistancePriority="748" translatesAutoresizingMaskIntoConstraints="NO" id="MUz-Zg-syW">
+                <textField focusRingType="none" horizontalHuggingPriority="246" verticalHuggingPriority="750" horizontalCompressionResistancePriority="748" translatesAutoresizingMaskIntoConstraints="NO" id="MUz-Zg-syW">
                     <rect key="frame" x="32" y="8" width="96" height="16"/>
                     <constraints>
                         <constraint firstAttribute="width" relation="lessThanOrEqual" constant="200" id="Dee-q5-lHR"/>
                     </constraints>
-                    <textFieldCell key="cell" title="Berlin Spandau" id="HXv-bf-4as">
+                    <textFieldCell key="cell" lineBreakMode="truncatingTail" title="Berlin Spandau" id="HXv-bf-4as">
                         <font key="font" metaFont="system"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -53,26 +53,26 @@
                     <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="stop_badge" id="Jiy-yf-mFL"/>
                 </imageView>
                 <stackView distribution="fill" orientation="horizontal" alignment="top" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EeZ-0x-y4a">
-                    <rect key="frame" x="184" y="8" width="129" height="16"/>
+                    <rect key="frame" x="172" y="8" width="141" height="16"/>
                     <subviews>
-                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ARd-fJ-jiR">
+                        <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="7VP-jg-Pym">
                             <rect key="frame" x="-2" y="0.0" width="39" height="16"/>
+                            <textFieldCell key="cell" lineBreakMode="clipping" title="19:06" id="MRj-Tv-jfj">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ARd-fJ-jiR">
+                            <rect key="frame" x="41" y="0.0" width="39" height="16"/>
                             <textFieldCell key="cell" lineBreakMode="clipping" title="18:59" id="tXd-sO-ohi">
                                 <font key="font" metaFont="system"/>
                                 <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                             </textFieldCell>
                         </textField>
-                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="7VP-jg-Pym">
-                            <rect key="frame" x="41" y="0.0" width="27" height="16"/>
-                            <textFieldCell key="cell" lineBreakMode="clipping" title="+15" id="MRj-Tv-jfj">
-                                <font key="font" metaFont="system"/>
-                                <color key="textColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
-                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                            </textFieldCell>
-                        </textField>
-                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="mfo-hb-yTJ">
-                            <rect key="frame" x="72" y="0.0" width="59" height="16"/>
+                        <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="mfo-hb-yTJ">
+                            <rect key="frame" x="84" y="0.0" width="59" height="16"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="55" id="efD-M9-fBU"/>
                             </constraints>
@@ -115,6 +115,7 @@
                 <constraint firstItem="oUO-NY-mPM" firstAttribute="top" secondItem="T42-m2-47b" secondAttribute="bottom" id="m0c-na-G3Y"/>
                 <constraint firstItem="itf-2B-Py0" firstAttribute="trailing" secondItem="oUO-NY-mPM" secondAttribute="trailing" id="ncR-mr-b33"/>
                 <constraint firstItem="itf-2B-Py0" firstAttribute="leading" secondItem="oUO-NY-mPM" secondAttribute="leading" id="oae-OL-Gcv"/>
+                <constraint firstItem="EeZ-0x-y4a" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Fm7-Tu-dXK" secondAttribute="trailing" constant="8" symbolic="YES" id="thQ-7s-Bge"/>
                 <constraint firstItem="EeZ-0x-y4a" firstAttribute="top" secondItem="MUz-Zg-syW" secondAttribute="top" id="uUy-OK-Lqk"/>
                 <constraint firstItem="MUz-Zg-syW" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="8" id="wuo-A1-mVc"/>
                 <constraint firstAttribute="trailing" secondItem="EeZ-0x-y4a" secondAttribute="trailing" constant="20" symbolic="YES" id="yJO-HY-Vgo"/>
