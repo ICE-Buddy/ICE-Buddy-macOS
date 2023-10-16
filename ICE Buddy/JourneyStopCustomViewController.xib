@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="21701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="22154" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="22154"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -33,12 +33,12 @@
                     </constraints>
                     <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="stop_icon" id="NHg-3Q-lWx"/>
                 </imageView>
-                <textField horizontalHuggingPriority="246" verticalHuggingPriority="750" horizontalCompressionResistancePriority="748" translatesAutoresizingMaskIntoConstraints="NO" id="MUz-Zg-syW">
+                <textField focusRingType="none" horizontalHuggingPriority="246" verticalHuggingPriority="750" horizontalCompressionResistancePriority="748" translatesAutoresizingMaskIntoConstraints="NO" id="MUz-Zg-syW">
                     <rect key="frame" x="32" y="8" width="96" height="16"/>
                     <constraints>
                         <constraint firstAttribute="width" relation="lessThanOrEqual" constant="200" id="Dee-q5-lHR"/>
                     </constraints>
-                    <textFieldCell key="cell" title="Berlin Spandau" id="HXv-bf-4as">
+                    <textFieldCell key="cell" lineBreakMode="truncatingTail" title="Berlin Spandau" id="HXv-bf-4as">
                         <font key="font" metaFont="system"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -55,7 +55,7 @@
                 <stackView distribution="fill" orientation="horizontal" alignment="top" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EeZ-0x-y4a">
                     <rect key="frame" x="172" y="8" width="141" height="16"/>
                     <subviews>
-                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="7VP-jg-Pym">
+                        <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="7VP-jg-Pym">
                             <rect key="frame" x="-2" y="0.0" width="39" height="16"/>
                             <textFieldCell key="cell" lineBreakMode="clipping" title="19:06" id="MRj-Tv-jfj">
                                 <font key="font" metaFont="system"/>
@@ -63,7 +63,7 @@
                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                             </textFieldCell>
                         </textField>
-                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ARd-fJ-jiR">
+                        <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ARd-fJ-jiR">
                             <rect key="frame" x="41" y="0.0" width="39" height="16"/>
                             <textFieldCell key="cell" lineBreakMode="clipping" title="18:59" id="tXd-sO-ohi">
                                 <font key="font" metaFont="system"/>
@@ -71,7 +71,7 @@
                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                             </textFieldCell>
                         </textField>
-                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="mfo-hb-yTJ">
+                        <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="mfo-hb-yTJ">
                             <rect key="frame" x="84" y="0.0" width="59" height="16"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="55" id="efD-M9-fBU"/>
