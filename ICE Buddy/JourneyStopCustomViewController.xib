@@ -21,8 +21,8 @@
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
-        <customView misplaced="YES" id="Hz6-mo-xeY">
-            <rect key="frame" x="0.0" y="0.0" width="333" height="33"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="333" height="32"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
                 <imageView horizontalHuggingPriority="246" verticalHuggingPriority="246" horizontalCompressionResistancePriority="744" verticalCompressionResistancePriority="742" translatesAutoresizingMaskIntoConstraints="NO" id="oUO-NY-mPM">
@@ -115,6 +115,7 @@
                 <constraint firstItem="oUO-NY-mPM" firstAttribute="top" secondItem="T42-m2-47b" secondAttribute="bottom" id="m0c-na-G3Y"/>
                 <constraint firstItem="itf-2B-Py0" firstAttribute="trailing" secondItem="oUO-NY-mPM" secondAttribute="trailing" id="ncR-mr-b33"/>
                 <constraint firstItem="itf-2B-Py0" firstAttribute="leading" secondItem="oUO-NY-mPM" secondAttribute="leading" id="oae-OL-Gcv"/>
+                <constraint firstItem="EeZ-0x-y4a" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Fm7-Tu-dXK" secondAttribute="trailing" constant="8" symbolic="YES" id="thQ-7s-Bge"/>
                 <constraint firstItem="EeZ-0x-y4a" firstAttribute="top" secondItem="MUz-Zg-syW" secondAttribute="top" id="uUy-OK-Lqk"/>
                 <constraint firstItem="MUz-Zg-syW" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="8" id="wuo-A1-mVc"/>
                 <constraint firstAttribute="trailing" secondItem="EeZ-0x-y4a" secondAttribute="trailing" constant="20" symbolic="YES" id="yJO-HY-Vgo"/>
