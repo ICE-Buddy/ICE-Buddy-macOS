@@ -103,6 +103,7 @@
                 <constraint firstItem="T42-m2-47b" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="3Cn-Ee-55B"/>
                 <constraint firstItem="T42-m2-47b" firstAttribute="trailing" secondItem="oUO-NY-mPM" secondAttribute="trailing" id="BBV-wB-UJo"/>
                 <constraint firstItem="Fm7-Tu-dXK" firstAttribute="leading" secondItem="MUz-Zg-syW" secondAttribute="trailing" constant="8" symbolic="YES" id="F01-kr-331"/>
+                <constraint firstItem="ARd-fJ-jiR" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Fm7-Tu-dXK" secondAttribute="trailing" constant="10" id="Koz-tC-pFg"/>
                 <constraint firstItem="oUO-NY-mPM" firstAttribute="centerY" secondItem="MUz-Zg-syW" secondAttribute="centerY" id="QJd-Q9-Vw4"/>
                 <constraint firstItem="MUz-Zg-syW" firstAttribute="leading" secondItem="oUO-NY-mPM" secondAttribute="trailing" constant="10" id="SO1-Lt-vVs"/>
                 <constraint firstItem="oUO-NY-mPM" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="12" id="brn-Lk-CId"/>
@@ -118,7 +119,7 @@
                 <constraint firstItem="MUz-Zg-syW" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="8" id="wuo-A1-mVc"/>
                 <constraint firstAttribute="trailing" secondItem="EeZ-0x-y4a" secondAttribute="trailing" constant="20" symbolic="YES" id="yJO-HY-Vgo"/>
             </constraints>
-            <point key="canvasLocation" x="-127.5" y="69.5"/>
+            <point key="canvasLocation" x="-127.5" y="69"/>
         </customView>
     </objects>
     <resources>
