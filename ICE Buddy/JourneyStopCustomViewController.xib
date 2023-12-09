@@ -32,11 +32,8 @@
                     </constraints>
                     <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="stop_icon" id="NHg-3Q-lWx"/>
                 </imageView>
-                <textField focusRingType="none" horizontalHuggingPriority="246" verticalHuggingPriority="750" horizontalCompressionResistancePriority="748" translatesAutoresizingMaskIntoConstraints="NO" id="MUz-Zg-syW">
+                <textField focusRingType="none" horizontalHuggingPriority="246" verticalHuggingPriority="750" horizontalCompressionResistancePriority="748" verticalCompressionResistancePriority="1" translatesAutoresizingMaskIntoConstraints="NO" id="MUz-Zg-syW">
                     <rect key="frame" x="32" y="8" width="96" height="16"/>
-                    <constraints>
-                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="200" id="Dee-q5-lHR"/>
-                    </constraints>
                     <textFieldCell key="cell" title="Berlin Spandau" id="HXv-bf-4as">
                         <font key="font" metaFont="system"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -101,6 +98,7 @@
             <constraints>
                 <constraint firstItem="T42-m2-47b" firstAttribute="leading" secondItem="oUO-NY-mPM" secondAttribute="leading" id="0V7-Ts-ibu"/>
                 <constraint firstItem="T42-m2-47b" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="3Cn-Ee-55B"/>
+                <constraint firstAttribute="width" constant="333" id="5CN-VE-Uih"/>
                 <constraint firstItem="T42-m2-47b" firstAttribute="trailing" secondItem="oUO-NY-mPM" secondAttribute="trailing" id="BBV-wB-UJo"/>
                 <constraint firstItem="Fm7-Tu-dXK" firstAttribute="leading" secondItem="MUz-Zg-syW" secondAttribute="trailing" constant="8" symbolic="YES" id="F01-kr-331"/>
                 <constraint firstItem="ARd-fJ-jiR" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Fm7-Tu-dXK" secondAttribute="trailing" constant="10" id="Koz-tC-pFg"/>
