@@ -72,7 +72,7 @@
                             <constraints>
                                 <constraint firstAttribute="width" constant="55" id="efD-M9-fBU"/>
                             </constraints>
-                            <textFieldCell key="cell" lineBreakMode="clipping" alignment="right" title="Gleis 222" id="Zxn-3H-cny">
+                            <textFieldCell key="cell" alignment="right" title="Gleis 22" id="Zxn-3H-cny">
                                 <font key="font" metaFont="system"/>
                                 <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
