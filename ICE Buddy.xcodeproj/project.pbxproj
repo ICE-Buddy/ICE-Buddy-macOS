@@ -7,31 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		511D62C0274553FE001C8399 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511D62BE274553FE001C8399 /* AboutViewController.swift */; };
-		511D62C1274553FE001C8399 /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 511D62BF274553FE001C8399 /* AboutViewController.xib */; };
-		511D62C327455470001C8399 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 511D62C227455470001C8399 /* Main.storyboard */; };
-		51444B74274426AE00AD2C68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51444B73274426AE00AD2C68 /* AppDelegate.swift */; };
 		51444B78274426AF00AD2C68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51444B77274426AF00AD2C68 /* Assets.xcassets */; };
 		51444B86274426AF00AD2C68 /* ICE_BuddyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51444B85274426AF00AD2C68 /* ICE_BuddyTests.swift */; };
 		51444B90274426AF00AD2C68 /* ICE_BuddyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51444B8F274426AF00AD2C68 /* ICE_BuddyUITests.swift */; };
 		51444B92274426AF00AD2C68 /* ICE_BuddyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51444B91274426AF00AD2C68 /* ICE_BuddyUITestsLaunchTests.swift */; };
-		51444BA02744271400AD2C68 /* MenuBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51444B9F2744271400AD2C68 /* MenuBarController.swift */; };
 		51444BA3274429B900AD2C68 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 51444BA2274429B900AD2C68 /* Alamofire */; };
-		51444BA8274438BE00AD2C68 /* ICEHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51444BA6274438BE00AD2C68 /* ICEHeader.swift */; };
-		51444BA9274438BE00AD2C68 /* ICEHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51444BA7274438BE00AD2C68 /* ICEHeader.xib */; };
-		51444BAC2744423300AD2C68 /* JourneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51444BAA2744423300AD2C68 /* JourneyViewController.swift */; };
-		51444BAD2744423300AD2C68 /* JourneyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51444BAB2744423300AD2C68 /* JourneyViewController.xib */; };
 		51444BB42744546A00AD2C68 /* FredKit in Frameworks */ = {isa = PBXBuildFile; productRef = 51444BB32744546A00AD2C68 /* FredKit */; };
-		51444BBF2745086000AD2C68 /* JourneyStopCustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51444BBD2745086000AD2C68 /* JourneyStopCustomViewController.swift */; };
-		51444BC02745086000AD2C68 /* JourneyStopCustomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51444BBE2745086000AD2C68 /* JourneyStopCustomViewController.xib */; };
-		51444BC327451D9800AD2C68 /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 51444BC227451D9800AD2C68 /* LaunchAtLogin */; };
-		51F66F22274A600A0076A3F5 /* SharingMenuitem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F66F21274A600A0076A3F5 /* SharingMenuitem.swift */; };
-		51F66F25274A796C0076A3F5 /* JourneyMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F66F23274A796C0076A3F5 /* JourneyMapViewController.swift */; };
-		51F66F26274A796C0076A3F5 /* JourneyMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51F66F24274A796C0076A3F5 /* JourneyMapViewController.xib */; };
 		B33E70A2287F2F15007C0D57 /* DBConnect in Frameworks */ = {isa = PBXBuildFile; productRef = B33E70A1287F2F15007C0D57 /* DBConnect */; };
 		B33E70A4287F2F15007C0D57 /* DBTimetable in Frameworks */ = {isa = PBXBuildFile; productRef = B33E70A3287F2F15007C0D57 /* DBTimetable */; };
 		B33E70A6287F2F15007C0D57 /* SNCFConnect in Frameworks */ = {isa = PBXBuildFile; productRef = B33E70A5287F2F15007C0D57 /* SNCFConnect */; };
 		B33E70A8287F2F15007C0D57 /* TrainConnect in Frameworks */ = {isa = PBXBuildFile; productRef = B33E70A7287F2F15007C0D57 /* TrainConnect */; };
+		F42CA4E42DDC94D70037ED6C /* JourneyBadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42CA4E32DDC94D70037ED6C /* JourneyBadgeView.swift */; };
+		F4848E232DDD285200F4F33A /* JourneyMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4848E222DDD285200F4F33A /* JourneyMapView.swift */; };
+		F498DADA2DDBBAC00051754E /* DBConnect in Frameworks */ = {isa = PBXBuildFile; productRef = F498DAD92DDBBAC00051754E /* DBConnect */; };
+		F4AE2F3B2DDDD057000F9E35 /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AE2F3A2DDDD057000F9E35 /* MenuBarView.swift */; };
+		F4AE2F3D2DDDDC0A000F9E35 /* InformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AE2F3C2DDDDC0A000F9E35 /* InformationView.swift */; };
+		F4AE2F3F2DDDDC20000F9E35 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AE2F3E2DDDDC20000F9E35 /* SettingsView.swift */; };
+		F4AE2F412DDDF6A5000F9E35 /* ConnectDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AE2F402DDDF6A5000F9E35 /* ConnectDataHandler.swift */; };
+		F4AE2F432DDE4B9E000F9E35 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F4AE2F422DDE4B9E000F9E35 /* Localizable.xcstrings */; };
+		F4AE2F472DDE5A32000F9E35 /* NotificationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AE2F462DDE5A32000F9E35 /* NotificationDelegate.swift */; };
+		F4FADD512DDBCC5E00DADFFB /* ICE_BuddyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FADD502DDBCC5E00DADFFB /* ICE_BuddyApp.swift */; };
+		F4FADD532DDBCC6200DADFFB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FADD522DDBCC6200DADFFB /* ContentView.swift */; };
+		F4FADD592DDBCF8300DADFFB /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = F4FADD582DDBCF8300DADFFB /* LaunchAtLogin */; };
+		F4FADD5B2DDBD5BE00DADFFB /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FADD5A2DDBD5BE00DADFFB /* AboutView.swift */; };
+		F4FADD5D2DDBF18100DADFFB /* TrainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FADD5C2DDBF18100DADFFB /* TrainView.swift */; };
+		F4FADD5F2DDBF71500DADFFB /* IceHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FADD5E2DDBF71500DADFFB /* IceHeaderView.swift */; };
+		F4FADD632DDBFEE600DADFFB /* JourneyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FADD622DDBFEE600DADFFB /* JourneyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,31 +53,30 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		511D62BE274553FE001C8399 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
-		511D62BF274553FE001C8399 /* AboutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
-		511D62C227455470001C8399 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		51444B70274426AE00AD2C68 /* ICE Buddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ICE Buddy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		51444B73274426AE00AD2C68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51444B77274426AF00AD2C68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		51444B7C274426AF00AD2C68 /* ICE_Buddy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ICE_Buddy.entitlements; sourceTree = "<group>"; };
 		51444B81274426AF00AD2C68 /* ICE BuddyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ICE BuddyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		51444B85274426AF00AD2C68 /* ICE_BuddyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICE_BuddyTests.swift; sourceTree = "<group>"; };
 		51444B8B274426AF00AD2C68 /* ICE BuddyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ICE BuddyUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		51444B8F274426AF00AD2C68 /* ICE_BuddyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICE_BuddyUITests.swift; sourceTree = "<group>"; };
 		51444B91274426AF00AD2C68 /* ICE_BuddyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICE_BuddyUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		51444B9E274426CD00AD2C68 /* ICE-Buddy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "ICE-Buddy-Info.plist"; sourceTree = SOURCE_ROOT; };
-		51444B9F2744271400AD2C68 /* MenuBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarController.swift; sourceTree = "<group>"; };
-		51444BA6274438BE00AD2C68 /* ICEHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICEHeader.swift; sourceTree = "<group>"; };
-		51444BA7274438BE00AD2C68 /* ICEHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ICEHeader.xib; sourceTree = "<group>"; };
-		51444BAA2744423300AD2C68 /* JourneyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyViewController.swift; sourceTree = "<group>"; };
-		51444BAB2744423300AD2C68 /* JourneyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JourneyViewController.xib; sourceTree = "<group>"; };
-		51444BBD2745086000AD2C68 /* JourneyStopCustomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyStopCustomViewController.swift; sourceTree = "<group>"; };
-		51444BBE2745086000AD2C68 /* JourneyStopCustomViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JourneyStopCustomViewController.xib; sourceTree = "<group>"; };
+		51444B9E274426CD00AD2C68 /* ICE-Buddy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ICE-Buddy-Info.plist"; sourceTree = SOURCE_ROOT; };
 		51B1CB90284D22F50039671B /* Train-API */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "Train-API"; path = "../Train-API"; sourceTree = "<group>"; };
-		51F66F21274A600A0076A3F5 /* SharingMenuitem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharingMenuitem.swift; sourceTree = "<group>"; };
-		51F66F23274A796C0076A3F5 /* JourneyMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyMapViewController.swift; sourceTree = "<group>"; };
-		51F66F24274A796C0076A3F5 /* JourneyMapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JourneyMapViewController.xib; sourceTree = "<group>"; };
-		B33E70A0287F2D80007C0D57 /* DBConnect */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = DBConnect; sourceTree = "<group>"; };
+		F42CA4E32DDC94D70037ED6C /* JourneyBadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyBadgeView.swift; sourceTree = "<group>"; };
+		F4848E222DDD285200F4F33A /* JourneyMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyMapView.swift; sourceTree = "<group>"; };
+		F4AE2F3A2DDDD057000F9E35 /* MenuBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarView.swift; sourceTree = "<group>"; };
+		F4AE2F3C2DDDDC0A000F9E35 /* InformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationView.swift; sourceTree = "<group>"; };
+		F4AE2F3E2DDDDC20000F9E35 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		F4AE2F402DDDF6A5000F9E35 /* ConnectDataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectDataHandler.swift; sourceTree = "<group>"; };
+		F4AE2F422DDE4B9E000F9E35 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		F4AE2F452DDE55AC000F9E35 /* ICE_Buddy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ICE_Buddy.entitlements; sourceTree = "<group>"; };
+		F4AE2F462DDE5A32000F9E35 /* NotificationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationDelegate.swift; sourceTree = "<group>"; };
+		F4FADD502DDBCC5E00DADFFB /* ICE_BuddyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICE_BuddyApp.swift; sourceTree = "<group>"; };
+		F4FADD522DDBCC6200DADFFB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F4FADD5A2DDBD5BE00DADFFB /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		F4FADD5C2DDBF18100DADFFB /* TrainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainView.swift; sourceTree = "<group>"; };
+		F4FADD5E2DDBF71500DADFFB /* IceHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceHeaderView.swift; sourceTree = "<group>"; };
+		F4FADD622DDBFEE600DADFFB /* JourneyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,11 +85,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B33E70A8287F2F15007C0D57 /* TrainConnect in Frameworks */,
-				51444BC327451D9800AD2C68 /* LaunchAtLogin in Frameworks */,
+				F498DADA2DDBBAC00051754E /* DBConnect in Frameworks */,
 				B33E70A6287F2F15007C0D57 /* SNCFConnect in Frameworks */,
 				B33E70A2287F2F15007C0D57 /* DBConnect in Frameworks */,
 				B33E70A4287F2F15007C0D57 /* DBTimetable in Frameworks */,
 				51444BB42744546A00AD2C68 /* FredKit in Frameworks */,
+				F4FADD592DDBCF8300DADFFB /* LaunchAtLogin in Frameworks */,
 				51444BA3274429B900AD2C68 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -117,7 +118,6 @@
 				51444B72274426AE00AD2C68 /* ICE Buddy */,
 				51444B84274426AF00AD2C68 /* ICE BuddyTests */,
 				51444B8E274426AF00AD2C68 /* ICE BuddyUITests */,
-				B33E70A0287F2D80007C0D57 /* DBConnect */,
 				51444B71274426AE00AD2C68 /* Products */,
 				51B1CB8F284D22F50039671B /* Frameworks */,
 			);
@@ -136,23 +136,23 @@
 		51444B72274426AE00AD2C68 /* ICE Buddy */ = {
 			isa = PBXGroup;
 			children = (
-				51444B9E274426CD00AD2C68 /* ICE-Buddy-Info.plist */,
-				51444B73274426AE00AD2C68 /* AppDelegate.swift */,
-				511D62BE274553FE001C8399 /* AboutViewController.swift */,
-				511D62BF274553FE001C8399 /* AboutViewController.xib */,
-				51444B9F2744271400AD2C68 /* MenuBarController.swift */,
-				51444BA6274438BE00AD2C68 /* ICEHeader.swift */,
-				51444BA7274438BE00AD2C68 /* ICEHeader.xib */,
-				51444BAA2744423300AD2C68 /* JourneyViewController.swift */,
-				51444BBD2745086000AD2C68 /* JourneyStopCustomViewController.swift */,
-				51444BBE2745086000AD2C68 /* JourneyStopCustomViewController.xib */,
-				51444BAB2744423300AD2C68 /* JourneyViewController.xib */,
-				51F66F23274A796C0076A3F5 /* JourneyMapViewController.swift */,
-				51F66F24274A796C0076A3F5 /* JourneyMapViewController.xib */,
-				51F66F21274A600A0076A3F5 /* SharingMenuitem.swift */,
+				F4FADD502DDBCC5E00DADFFB /* ICE_BuddyApp.swift */,
+				F4FADD522DDBCC6200DADFFB /* ContentView.swift */,
+				F4AE2F3A2DDDD057000F9E35 /* MenuBarView.swift */,
 				51444B77274426AF00AD2C68 /* Assets.xcassets */,
-				511D62C227455470001C8399 /* Main.storyboard */,
-				51444B7C274426AF00AD2C68 /* ICE_Buddy.entitlements */,
+				F4AE2F422DDE4B9E000F9E35 /* Localizable.xcstrings */,
+				F4AE2F402DDDF6A5000F9E35 /* ConnectDataHandler.swift */,
+				F4AE2F462DDE5A32000F9E35 /* NotificationDelegate.swift */,
+				F4848E222DDD285200F4F33A /* JourneyMapView.swift */,
+				F4FADD622DDBFEE600DADFFB /* JourneyView.swift */,
+				F42CA4E32DDC94D70037ED6C /* JourneyBadgeView.swift */,
+				F4AE2F3C2DDDDC0A000F9E35 /* InformationView.swift */,
+				F4AE2F3E2DDDDC20000F9E35 /* SettingsView.swift */,
+				F4FADD5A2DDBD5BE00DADFFB /* AboutView.swift */,
+				F4FADD5C2DDBF18100DADFFB /* TrainView.swift */,
+				F4FADD5E2DDBF71500DADFFB /* IceHeaderView.swift */,
+				51444B9E274426CD00AD2C68 /* ICE-Buddy-Info.plist */,
+				F4AE2F452DDE55AC000F9E35 /* ICE_Buddy.entitlements */,
 			);
 			path = "ICE Buddy";
 			sourceTree = "<group>";
@@ -192,7 +192,6 @@
 				51444B6C274426AE00AD2C68 /* Sources */,
 				51444B6D274426AE00AD2C68 /* Frameworks */,
 				51444B6E274426AE00AD2C68 /* Resources */,
-				51444BC827454AC500AD2C68 /* Copy “Launch at Login Helper” */,
 			);
 			buildRules = (
 			);
@@ -202,11 +201,12 @@
 			packageProductDependencies = (
 				51444BA2274429B900AD2C68 /* Alamofire */,
 				51444BB32744546A00AD2C68 /* FredKit */,
-				51444BC227451D9800AD2C68 /* LaunchAtLogin */,
 				B33E70A1287F2F15007C0D57 /* DBConnect */,
 				B33E70A3287F2F15007C0D57 /* DBTimetable */,
 				B33E70A5287F2F15007C0D57 /* SNCFConnect */,
 				B33E70A7287F2F15007C0D57 /* TrainConnect */,
+				F498DAD92DDBBAC00051754E /* DBConnect */,
+				F4FADD582DDBCF8300DADFFB /* LaunchAtLogin */,
 			);
 			productName = "ICE Buddy";
 			productReference = 51444B70274426AE00AD2C68 /* ICE Buddy.app */;
@@ -256,7 +256,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1310;
-				LastUpgradeCheck = 1310;
+				LastUpgradeCheck = 1630;
 				TargetAttributes = {
 					51444B6F274426AE00AD2C68 = {
 						CreatedOnToolsVersion = 13.1;
@@ -278,12 +278,14 @@
 			knownRegions = (
 				en,
 				Base,
+				de,
 			);
 			mainGroup = 51444B67274426AE00AD2C68;
 			packageReferences = (
 				51444BA1274429B900AD2C68 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				51444BB22744546A00AD2C68 /* XCRemoteSwiftPackageReference "FredKit" */,
-				51444BC127451D9800AD2C68 /* XCRemoteSwiftPackageReference "LaunchAtLogin" */,
+				F498DAD82DDBBA9F0051754E /* XCRemoteSwiftPackageReference "DBConnect" */,
+				F4FADD572DDBCF8300DADFFB /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */,
 			);
 			productRefGroup = 51444B71274426AE00AD2C68 /* Products */;
 			projectDirPath = "";
@@ -302,12 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				51444B78274426AF00AD2C68 /* Assets.xcassets in Resources */,
-				51444BAD2744423300AD2C68 /* JourneyViewController.xib in Resources */,
-				51444BA9274438BE00AD2C68 /* ICEHeader.xib in Resources */,
-				51444BC02745086000AD2C68 /* JourneyStopCustomViewController.xib in Resources */,
-				511D62C327455470001C8399 /* Main.storyboard in Resources */,
-				511D62C1274553FE001C8399 /* AboutViewController.xib in Resources */,
-				51F66F26274A796C0076A3F5 /* JourneyMapViewController.xib in Resources */,
+				F4AE2F432DDE4B9E000F9E35 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,40 +324,24 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		51444BC827454AC500AD2C68 /* Copy “Launch at Login Helper” */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Copy “Launch at Login Helper”";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${BUILT_PRODUCTS_DIR}/LaunchAtLogin_LaunchAtLogin.bundle/Contents/Resources/copy-helper-swiftpm.sh\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		51444B6C274426AE00AD2C68 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51F66F22274A600A0076A3F5 /* SharingMenuitem.swift in Sources */,
-				51444BA02744271400AD2C68 /* MenuBarController.swift in Sources */,
-				51444B74274426AE00AD2C68 /* AppDelegate.swift in Sources */,
-				51444BA8274438BE00AD2C68 /* ICEHeader.swift in Sources */,
-				51444BBF2745086000AD2C68 /* JourneyStopCustomViewController.swift in Sources */,
-				511D62C0274553FE001C8399 /* AboutViewController.swift in Sources */,
-				51F66F25274A796C0076A3F5 /* JourneyMapViewController.swift in Sources */,
-				51444BAC2744423300AD2C68 /* JourneyViewController.swift in Sources */,
+				F4AE2F412DDDF6A5000F9E35 /* ConnectDataHandler.swift in Sources */,
+				F4FADD5B2DDBD5BE00DADFFB /* AboutView.swift in Sources */,
+				F4FADD512DDBCC5E00DADFFB /* ICE_BuddyApp.swift in Sources */,
+				F4848E232DDD285200F4F33A /* JourneyMapView.swift in Sources */,
+				F4FADD632DDBFEE600DADFFB /* JourneyView.swift in Sources */,
+				F4FADD5F2DDBF71500DADFFB /* IceHeaderView.swift in Sources */,
+				F4FADD5D2DDBF18100DADFFB /* TrainView.swift in Sources */,
+				F4AE2F472DDE5A32000F9E35 /* NotificationDelegate.swift in Sources */,
+				F4FADD532DDBCC6200DADFFB /* ContentView.swift in Sources */,
+				F4AE2F3B2DDDD057000F9E35 /* MenuBarView.swift in Sources */,
+				F4AE2F3D2DDDDC0A000F9E35 /* InformationView.swift in Sources */,
+				F42CA4E42DDC94D70037ED6C /* JourneyBadgeView.swift in Sources */,
+				F4AE2F3F2DDDDC20000F9E35 /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,6 +382,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -431,9 +413,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -454,6 +438,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -462,6 +447,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -492,9 +478,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -508,6 +496,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
 			name = Release;
@@ -520,8 +509,9 @@
 				CODE_SIGN_ENTITLEMENTS = "ICE Buddy/ICE_Buddy.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 15;
-				DEVELOPMENT_TEAM = 52U6XAJSSF;
+				CURRENT_PROJECT_VERSION = 16;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = 39WNW6DPX9;
 				ENABLE_HARDENED_RUNTIME = YES;
 				EXCLUDED_SOURCE_FILE_NAMES = (
 					FredKit/UI/FredKitSimpleDetailDisclosureTableViewCell.xib,
@@ -530,6 +520,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ICE-Buddy-Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -537,9 +528,10 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 1.2.3;
-				PRODUCT_BUNDLE_IDENTIFIER = "wtf.riedel.ICE-Buddy";
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.simon.ICE-Buddy";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -554,8 +546,9 @@
 				CODE_SIGN_ENTITLEMENTS = "ICE Buddy/ICE_Buddy.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 15;
-				DEVELOPMENT_TEAM = 52U6XAJSSF;
+				CURRENT_PROJECT_VERSION = 16;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = 39WNW6DPX9;
 				ENABLE_HARDENED_RUNTIME = YES;
 				EXCLUDED_SOURCE_FILE_NAMES = (
 					tripInfo2.json,
@@ -566,6 +559,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ICE-Buddy-Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -573,9 +567,10 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 1.2.3;
-				PRODUCT_BUNDLE_IDENTIFIER = "wtf.riedel.ICE-Buddy";
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.simon.ICE-Buddy";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -585,11 +580,11 @@
 		51444B99274426AF00AD2C68 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = CS5SL7ZTHZ;
 				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -610,11 +605,11 @@
 		51444B9A274426AF00AD2C68 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = CS5SL7ZTHZ;
 				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -635,10 +630,10 @@
 		51444B9C274426AF00AD2C68 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = CS5SL7ZTHZ;
 				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -658,10 +653,10 @@
 		51444B9D274426AF00AD2C68 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = CS5SL7ZTHZ;
 				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -737,12 +732,20 @@
 				minimumVersion = 0.1.1;
 			};
 		};
-		51444BC127451D9800AD2C68 /* XCRemoteSwiftPackageReference "LaunchAtLogin" */ = {
+		F498DAD82DDBBA9F0051754E /* XCRemoteSwiftPackageReference "DBConnect" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/sindresorhus/LaunchAtLogin";
+			repositoryURL = "https://github.com/leoMehlig/DBConnect.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		F4FADD572DDBCF8300DADFFB /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/LaunchAtLogin-Modern.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 4.0.0;
+				minimumVersion = 1.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -757,11 +760,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 51444BB22744546A00AD2C68 /* XCRemoteSwiftPackageReference "FredKit" */;
 			productName = FredKit;
-		};
-		51444BC227451D9800AD2C68 /* LaunchAtLogin */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 51444BC127451D9800AD2C68 /* XCRemoteSwiftPackageReference "LaunchAtLogin" */;
-			productName = LaunchAtLogin;
 		};
 		B33E70A1287F2F15007C0D57 /* DBConnect */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -778,6 +776,16 @@
 		B33E70A7287F2F15007C0D57 /* TrainConnect */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = TrainConnect;
+		};
+		F498DAD92DDBBAC00051754E /* DBConnect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F498DAD82DDBBA9F0051754E /* XCRemoteSwiftPackageReference "DBConnect" */;
+			productName = DBConnect;
+		};
+		F4FADD582DDBCF8300DADFFB /* LaunchAtLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4FADD572DDBCF8300DADFFB /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */;
+			productName = LaunchAtLogin;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

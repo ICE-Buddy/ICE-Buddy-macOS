@@ -1,4 +1,5 @@
 {
+  "originHash" : "80c60a93a9abfc1e8a6bd44b6be98fba2a242389e8eed1c88c04051aa3ab7e4e",
   "pins" : [
     {
       "identity" : "alamofire",
@@ -7,6 +8,15 @@
       "state" : {
         "revision" : "d120af1e8638c7da36c8481fd61a66c0c08dc4fc",
         "version" : "5.4.4"
+      }
+    },
+    {
+      "identity" : "dbconnect",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/leoMehlig/DBConnect.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "733ed56de91bc10e538b587bc71c55b963073259"
       }
     },
     {
@@ -19,12 +29,12 @@
       }
     },
     {
-      "identity" : "launchatlogin",
+      "identity" : "launchatlogin-modern",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/sindresorhus/LaunchAtLogin",
+      "location" : "https://github.com/sindresorhus/LaunchAtLogin-Modern.git",
       "state" : {
-        "revision" : "e8171b3e38a2816f579f58f3dac1522aa39efe41",
-        "version" : "4.2.0"
+        "revision" : "a04ec1c363be3627734f6dad757d82f5d4fa8fcc",
+        "version" : "1.1.0"
       }
     },
     {
@@ -32,8 +42,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Moya/Moya",
       "state" : {
-        "revision" : "9b906860e3c3c09032879465c471e6375829593f",
-        "version" : "15.0.0"
+        "revision" : "c263811c1f3dbf002be9bd83107f7cdc38992b26",
+        "version" : "15.0.3"
       }
     },
     {
@@ -50,10 +60,10 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/ReactiveX/RxSwift.git",
       "state" : {
-        "revision" : "b4307ba0b6425c0ba4178e138799946c3da594f8",
-        "version" : "6.5.0"
+        "revision" : "5dd1907d64f0d36f158f61a466bab75067224893",
+        "version" : "6.9.0"
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }
