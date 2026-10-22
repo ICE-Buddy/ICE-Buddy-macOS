@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+        AABB00000000000000000007 /* APIDiagnosticsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABB00000000000000000008 /* APIDiagnosticsController.swift */; };
         AABB00000000000000000001 /* OnboardConnect in Frameworks */ = {isa = PBXBuildFile; productRef = AABB00000000000000000002 /* OnboardConnect */; };
         AABB00000000000000000003 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AABB00000000000000000004 /* Localizable.strings */; };
 		511D62C0274553FE001C8399 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511D62BE274553FE001C8399 /* AboutViewController.swift */; };
@@ -54,6 +55,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+        AABB00000000000000000008 /* APIDiagnosticsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIDiagnosticsController.swift; sourceTree = "<group>"; };
         AABB00000000000000000005 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
         AABB00000000000000000006 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		511D62BE274553FE001C8399 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 				511D62BE274553FE001C8399 /* AboutViewController.swift */,
 				511D62BF274553FE001C8399 /* AboutViewController.xib */,
 				51444B9F2744271400AD2C68 /* MenuBarController.swift */,
+                AABB00000000000000000008 /* APIDiagnosticsController.swift */,
 				51444BA6274438BE00AD2C68 /* ICEHeader.swift */,
 				51444BA7274438BE00AD2C68 /* ICEHeader.xib */,
 				51444BAA2744423300AD2C68 /* JourneyViewController.swift */,
@@ -367,6 +370,7 @@
 			files = (
 				51F66F22274A600A0076A3F5 /* SharingMenuitem.swift in Sources */,
 				51444BA02744271400AD2C68 /* MenuBarController.swift in Sources */,
+                AABB00000000000000000007 /* APIDiagnosticsController.swift in Sources */,
 				51444B74274426AE00AD2C68 /* AppDelegate.swift in Sources */,
 				51444BA8274438BE00AD2C68 /* ICEHeader.swift in Sources */,
 				51444BBF2745086000AD2C68 /* JourneyStopCustomViewController.swift in Sources */,

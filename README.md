@@ -20,6 +20,12 @@ xcodebuild -project "Train Buddy.xcodeproj" -scheme "Train Buddy" -configuration
 
 The app targets macOS 12 or later. Its bundle ID and preference keys are preserved for updates from ICE Buddy. Use the `--demo` launch argument to inspect the app with bundled ICE sample data without train Wi-Fi. English and German menus are included.
 
+## Reporting an API problem
+
+Choose **Report API problem…** (**API-Problem melden…**) in the menu, including when disconnected. Review the diagnostic report, then prepare an email to **trainbuddy@riedel.wtf** or save the JSON file for use in webmail. Nothing is sent automatically.
+
+The report contains recent technical request metadata and app/macOS versions. It excludes locations, station names, Wi-Fi identifiers, headers and response contents. Add a short description of the problem and operator yourself if useful. The support address must exist as a mailbox or forwarding alias; the app does not provision email hosting.
+
 ## Contribution Rules
 
 We encourage everyone to improve and enhance Train Buddy for different train types and functionalities. The project's original contribution rule remains: pull requests should be written while travelling on a train.
