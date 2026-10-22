@@ -1,19 +1,27 @@
 <img src="https://user-images.githubusercontent.com/5204169/172066908-19394991-76d5-4cfb-a535-8be4b6a68e05.png" width="100" height="100">
 
-# ICE Buddy for macOS
+# Train Buddy for macOS
 
-ICE Buddy is an app that shows live train travel info in your Mac’s menu bar while you’re on the train!
-It connect’s to the trains‘ local server in order to get live travel data, like curent speed, delays, next stops…
+Train Buddy (formerly ICE Buddy) shows your train's journey, speed, delays, next stops and route in your Mac's menu bar. It reads the local onboard portal while you are connected to supported train Wi-Fi.
 
-Download it for free from the [Mac AppStore](https://apps.apple.com/de/app/ice-buddy-for-your-menu-bar/id1595947689?l=en&mt=12)
+Supports ICE and TGV, with additional adapters for ÖBB Railnet, ČD onboard Wi-Fi and DB Zugportal. Available information depends on the portal: for example, regional journeys remain visible even without speed data. Reported delays remain visible, including delays below five minutes and at terminal stations.
 
-# Contribution Rules
-We encourage everyone to improve and enhance ICE buddy for all kinds of different train types and functionalities, but there is one rule: we only accept pull requests written while travaling on a train!!
+The existing [Mac App Store listing](https://apps.apple.com/app/id1595947689) remains the released ICE Buddy build until a new version is submitted. See [the implementation and validation notes](CHANGELOG.md) and [API architecture](DBConnect/README.md).
 
-![220104 screen](https://user-images.githubusercontent.com/5204169/172067056-45556072-69d7-4fa2-9ce0-a9c1d137e071.png)
+## Build and test
 
+```sh
+git clone --recurse-submodules https://github.com/ICE-Buddy/ICE-Buddy-macOS.git
+cd ICE-Buddy-macOS
+open "Train Buddy.xcodeproj"
+swift test --package-path DBConnect
+xcodebuild -project "Train Buddy.xcodeproj" -scheme "Train Buddy" -configuration Debug CODE_SIGNING_ALLOWED=NO build
+```
 
-![220104 screen-1](https://user-images.githubusercontent.com/5204169/172067046-7c4dd3c2-410b-430f-a3e2-7ebdf89ab6df.png)
+The app targets macOS 12 or later. Its bundle ID and preference keys are preserved for updates from ICE Buddy. Use the `--demo` launch argument to inspect the app with bundled ICE sample data without train Wi-Fi. English and German menus are included.
 
+## Contribution Rules
 
-![220104 screen-2](https://user-images.githubusercontent.com/5204169/172067038-7d64bb52-afae-4661-b4ad-2399a98c6c83.png)
+We encourage everyone to improve and enhance Train Buddy for different train types and functionalities. The project's original contribution rule remains: pull requests should be written while travelling on a train.
+
+![Journey](https://user-images.githubusercontent.com/5204169/172067056-45556072-69d7-4fa2-9fe0-a9c1d137e071.png)
