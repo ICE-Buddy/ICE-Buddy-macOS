@@ -3,13 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
-        AABB00000000000000000007 /* APIDiagnosticsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABB00000000000000000008 /* APIDiagnosticsController.swift */; };
-        AABB00000000000000000001 /* OnboardConnect in Frameworks */ = {isa = PBXBuildFile; productRef = AABB00000000000000000002 /* OnboardConnect */; };
-        AABB00000000000000000003 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AABB00000000000000000004 /* Localizable.strings */; };
+		2BAAC78D02BB95D3E2111252 /* TrainBuddyKit in Frameworks */ = {isa = PBXBuildFile; productRef = 005E03FDB9677943830FB7E0 /* TrainBuddyKit */; };
 		511D62C0274553FE001C8399 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511D62BE274553FE001C8399 /* AboutViewController.swift */; };
 		511D62C1274553FE001C8399 /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 511D62BF274553FE001C8399 /* AboutViewController.xib */; };
 		511D62C327455470001C8399 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 511D62C227455470001C8399 /* Main.storyboard */; };
@@ -31,6 +29,15 @@
 		51F66F22274A600A0076A3F5 /* SharingMenuitem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F66F21274A600A0076A3F5 /* SharingMenuitem.swift */; };
 		51F66F25274A796C0076A3F5 /* JourneyMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F66F23274A796C0076A3F5 /* JourneyMapViewController.swift */; };
 		51F66F26274A796C0076A3F5 /* JourneyMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51F66F24274A796C0076A3F5 /* JourneyMapViewController.xib */; };
+		52D85DB706E2F9983E466426 /* TrainIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BECD534C9D00FA3B8DF5860 /* TrainIntents.swift */; };
+		86336E633089F24C00E43071 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86336E623089F24C00E43071 /* WidgetKit.framework */; };
+		86336E653089F24C00E43071 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86336E643089F24C00E43071 /* SwiftUI.framework */; };
+		86336E703089F24D00E43071 /* TrainBuddyWidgetsExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 86336E613089F24C00E43071 /* TrainBuddyWidgetsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9817B4457668552FA6AC5486 /* TrainIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BECD534C9D00FA3B8DF5860 /* TrainIntents.swift */; };
+		AABB00000000000000000001 /* OnboardConnect in Frameworks */ = {isa = PBXBuildFile; productRef = AABB00000000000000000002 /* OnboardConnect */; };
+		AABB00000000000000000003 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AABB00000000000000000004 /* Localizable.strings */; };
+		AABB00000000000000000007 /* APIDiagnosticsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABB00000000000000000008 /* APIDiagnosticsController.swift */; };
+		B269B8B6A24855ED8B66277A /* TrainBuddyKit in Frameworks */ = {isa = PBXBuildFile; productRef = FDC6BF857D3F80191781A257 /* TrainBuddyKit */; };
 		B33E70A2287F2F15007C0D57 /* DBConnect in Frameworks */ = {isa = PBXBuildFile; productRef = B33E70A1287F2F15007C0D57 /* DBConnect */; };
 		B33E70A4287F2F15007C0D57 /* DBTimetable in Frameworks */ = {isa = PBXBuildFile; productRef = B33E70A3287F2F15007C0D57 /* DBTimetable */; };
 		B33E70A6287F2F15007C0D57 /* SNCFConnect in Frameworks */ = {isa = PBXBuildFile; productRef = B33E70A5287F2F15007C0D57 /* SNCFConnect */; };
@@ -38,6 +45,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		4BDA46D4423AF7D06D3DE916 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 51444B68274426AE00AD2C68 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 86336E513089F22500E43071;
+			remoteInfo = "Train Buddy iOS";
+		};
 		51444B82274426AF00AD2C68 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 51444B68274426AE00AD2C68 /* Project object */;
@@ -52,12 +66,31 @@
 			remoteGlobalIDString = 51444B6F274426AE00AD2C68;
 			remoteInfo = "Train Buddy";
 		};
+		86336E6E3089F24D00E43071 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 51444B68274426AE00AD2C68 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 86336E603089F24C00E43071;
+			remoteInfo = TrainBuddyWidgetsExtension;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		86336E753089F24D00E43071 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				86336E703089F24D00E43071 /* TrainBuddyWidgetsExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-        AABB00000000000000000008 /* APIDiagnosticsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIDiagnosticsController.swift; sourceTree = "<group>"; };
-        AABB00000000000000000005 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-        AABB00000000000000000006 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2BECD534C9D00FA3B8DF5860 /* TrainIntents.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TrainIntents.swift; sourceTree = "<group>"; };
 		511D62BE274553FE001C8399 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		511D62BF274553FE001C8399 /* AboutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
 		511D62C227455470001C8399 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -82,11 +115,34 @@
 		51F66F21274A600A0076A3F5 /* SharingMenuitem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharingMenuitem.swift; sourceTree = "<group>"; };
 		51F66F23274A796C0076A3F5 /* JourneyMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyMapViewController.swift; sourceTree = "<group>"; };
 		51F66F24274A796C0076A3F5 /* JourneyMapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JourneyMapViewController.xib; sourceTree = "<group>"; };
+		86336E523089F22500E43071 /* Train Buddy iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Train Buddy iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		86336E613089F24C00E43071 /* TrainBuddyWidgetsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TrainBuddyWidgetsExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		86336E623089F24C00E43071 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = /System/Library/Frameworks/WidgetKit.framework; sourceTree = "<absolute>"; };
+		86336E643089F24C00E43071 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = /System/Library/Frameworks/SwiftUI.framework; sourceTree = "<absolute>"; };
+		86336E7B3089F47C00E43071 /* TrainBuddyWidgetsExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TrainBuddyWidgetsExtension.entitlements; sourceTree = "<group>"; };
+		86336E7C3089F48400E43071 /* Train-Buddy-iOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Train-Buddy-iOS-Info.plist"; sourceTree = "<group>"; };
+		86336E9A3089F59700E43071 /* Train Buddy iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Train Buddy iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AABB00000000000000000005 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AABB00000000000000000006 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AABB00000000000000000008 /* APIDiagnosticsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIDiagnosticsController.swift; sourceTree = "<group>"; };
 		B33E70A0287F2D80007C0D57 /* DBConnect */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = DBConnect; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-/* Begin PBXVariantGroup section */
-        AABB00000000000000000004 /* Localizable.strings */ = {isa = PBXVariantGroup; children = (AABB00000000000000000005 /* en */, AABB00000000000000000006 /* de */,); name = Localizable.strings; sourceTree = "<group>"; };
-/* End PBXVariantGroup section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		86336E713089F24D00E43071 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 86336E603089F24C00E43071 /* TrainBuddyWidgetsExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		86336E533089F22500E43071 /* Train Buddy iOS */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "Train Buddy iOS"; sourceTree = "<group>"; };
+		86336E663089F24C00E43071 /* TrainBuddyWidgets */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (86336E713089F24D00E43071 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = TrainBuddyWidgets; sourceTree = "<group>"; };
+		86336E9B3089F59700E43071 /* Train Buddy iOSUITests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "Train Buddy iOSUITests"; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		51444B6D274426AE00AD2C68 /* Frameworks */ = {
@@ -94,7 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B33E70A8287F2F15007C0D57 /* TrainConnect in Frameworks */,
-                AABB00000000000000000001 /* OnboardConnect in Frameworks */,
+				AABB00000000000000000001 /* OnboardConnect in Frameworks */,
 				51444BC327451D9800AD2C68 /* LaunchAtLogin in Frameworks */,
 				B33E70A6287F2F15007C0D57 /* SNCFConnect in Frameworks */,
 				B33E70A2287F2F15007C0D57 /* DBConnect in Frameworks */,
@@ -118,18 +174,49 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		86336E4F3089F22500E43071 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BAAC78D02BB95D3E2111252 /* TrainBuddyKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86336E5E3089F24C00E43071 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86336E653089F24C00E43071 /* SwiftUI.framework in Frameworks */,
+				86336E633089F24C00E43071 /* WidgetKit.framework in Frameworks */,
+				B269B8B6A24855ED8B66277A /* TrainBuddyKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86336E973089F59700E43071 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		51444B67274426AE00AD2C68 = {
 			isa = PBXGroup;
 			children = (
+				86336E7C3089F48400E43071 /* Train-Buddy-iOS-Info.plist */,
+				86336E7B3089F47C00E43071 /* TrainBuddyWidgetsExtension.entitlements */,
 				51444B72274426AE00AD2C68 /* Train Buddy */,
 				51444B84274426AF00AD2C68 /* Train BuddyTests */,
 				51444B8E274426AF00AD2C68 /* Train BuddyUITests */,
 				B33E70A0287F2D80007C0D57 /* DBConnect */,
+				86336E533089F22500E43071 /* Train Buddy iOS */,
+				86336E663089F24C00E43071 /* TrainBuddyWidgets */,
+				86336E9B3089F59700E43071 /* Train Buddy iOSUITests */,
 				51444B71274426AE00AD2C68 /* Products */,
 				51B1CB8F284D22F50039671B /* Frameworks */,
+				FC47A345AD9A23FD67832AFC /* MobileShared */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,6 +226,9 @@
 				51444B70274426AE00AD2C68 /* Train Buddy.app */,
 				51444B81274426AF00AD2C68 /* Train BuddyTests.xctest */,
 				51444B8B274426AF00AD2C68 /* Train BuddyUITests.xctest */,
+				86336E523089F22500E43071 /* Train Buddy iOS.app */,
+				86336E613089F24C00E43071 /* TrainBuddyWidgetsExtension.appex */,
+				86336E9A3089F59700E43071 /* Train Buddy iOSUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -146,13 +236,13 @@
 		51444B72274426AE00AD2C68 /* Train Buddy */ = {
 			isa = PBXGroup;
 			children = (
-                AABB00000000000000000004 /* Localizable.strings */,
+				AABB00000000000000000004 /* Localizable.strings */,
 				51444B9E274426CD00AD2C68 /* Train-Buddy-Info.plist */,
 				51444B73274426AE00AD2C68 /* AppDelegate.swift */,
 				511D62BE274553FE001C8399 /* AboutViewController.swift */,
 				511D62BF274553FE001C8399 /* AboutViewController.xib */,
 				51444B9F2744271400AD2C68 /* MenuBarController.swift */,
-                AABB00000000000000000008 /* APIDiagnosticsController.swift */,
+				AABB00000000000000000008 /* APIDiagnosticsController.swift */,
 				51444BA6274438BE00AD2C68 /* ICEHeader.swift */,
 				51444BA7274438BE00AD2C68 /* ICEHeader.xib */,
 				51444BAA2744423300AD2C68 /* JourneyViewController.swift */,
@@ -190,8 +280,18 @@
 			isa = PBXGroup;
 			children = (
 				51B1CB90284D22F50039671B /* Train-API */,
+				86336E623089F24C00E43071 /* WidgetKit.framework */,
+				86336E643089F24C00E43071 /* SwiftUI.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FC47A345AD9A23FD67832AFC /* MobileShared */ = {
+			isa = PBXGroup;
+			children = (
+				2BECD534C9D00FA3B8DF5860 /* TrainIntents.swift */,
+			);
+			path = MobileShared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,7 +319,7 @@
 				B33E70A3287F2F15007C0D57 /* DBTimetable */,
 				B33E70A5287F2F15007C0D57 /* SNCFConnect */,
 				B33E70A7287F2F15007C0D57 /* TrainConnect */,
-                AABB00000000000000000002 /* OnboardConnect */,
+				AABB00000000000000000002 /* OnboardConnect */,
 			);
 			productName = "Train Buddy";
 			productReference = 51444B70274426AE00AD2C68 /* Train Buddy.app */;
@@ -261,6 +361,75 @@
 			productReference = 51444B8B274426AF00AD2C68 /* Train BuddyUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		86336E513089F22500E43071 /* Train Buddy iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86336E5C3089F22500E43071 /* Build configuration list for PBXNativeTarget "Train Buddy iOS" */;
+			buildPhases = (
+				86336E4E3089F22500E43071 /* Sources */,
+				86336E4F3089F22500E43071 /* Frameworks */,
+				86336E503089F22500E43071 /* Resources */,
+				86336E753089F24D00E43071 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				86336E6F3089F24D00E43071 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				86336E533089F22500E43071 /* Train Buddy iOS */,
+			);
+			name = "Train Buddy iOS";
+			packageProductDependencies = (
+				005E03FDB9677943830FB7E0 /* TrainBuddyKit */,
+			);
+			productName = "Train Buddy iOS";
+			productReference = 86336E523089F22500E43071 /* Train Buddy iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		86336E603089F24C00E43071 /* TrainBuddyWidgetsExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86336E723089F24D00E43071 /* Build configuration list for PBXNativeTarget "TrainBuddyWidgetsExtension" */;
+			buildPhases = (
+				86336E5D3089F24C00E43071 /* Sources */,
+				86336E5E3089F24C00E43071 /* Frameworks */,
+				86336E5F3089F24C00E43071 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				86336E663089F24C00E43071 /* TrainBuddyWidgets */,
+			);
+			name = TrainBuddyWidgetsExtension;
+			packageProductDependencies = (
+				FDC6BF857D3F80191781A257 /* TrainBuddyKit */,
+			);
+			productName = TrainBuddyWidgetsExtension;
+			productReference = 86336E613089F24C00E43071 /* TrainBuddyWidgetsExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		86336E993089F59700E43071 /* Train Buddy iOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86336E9E3089F59700E43071 /* Build configuration list for PBXNativeTarget "Train Buddy iOSUITests" */;
+			buildPhases = (
+				86336E963089F59700E43071 /* Sources */,
+				86336E973089F59700E43071 /* Frameworks */,
+				86336E983089F59700E43071 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA88BAE1773DE89375178E41 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				86336E9B3089F59700E43071 /* Train Buddy iOSUITests */,
+			);
+			name = "Train Buddy iOSUITests";
+			productName = "Train Buddy iOSUITests";
+			productReference = 86336E9A3089F59700E43071 /* Train Buddy iOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -268,7 +437,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1310;
+				LastSwiftUpdateCheck = 2710;
 				LastUpgradeCheck = 1310;
 				TargetAttributes = {
 					51444B6F274426AE00AD2C68 = {
@@ -282,6 +451,16 @@
 						CreatedOnToolsVersion = 13.1;
 						TestTargetID = 51444B6F274426AE00AD2C68;
 					};
+					86336E513089F22500E43071 = {
+						CreatedOnToolsVersion = 27.1;
+					};
+					86336E603089F24C00E43071 = {
+						CreatedOnToolsVersion = 27.1;
+					};
+					86336E993089F59700E43071 = {
+						CreatedOnToolsVersion = 27.1;
+						TestTargetID = 86336E513089F22500E43071;
+					};
 				};
 			};
 			buildConfigurationList = 51444B6B274426AE00AD2C68 /* Build configuration list for PBXProject "Train Buddy" */;
@@ -290,7 +469,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-                de,
+				de,
 				Base,
 			);
 			mainGroup = 51444B67274426AE00AD2C68;
@@ -298,6 +477,7 @@
 				51444BA1274429B900AD2C68 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				51444BB22744546A00AD2C68 /* XCRemoteSwiftPackageReference "FredKit" */,
 				51444BC127451D9800AD2C68 /* XCRemoteSwiftPackageReference "LaunchAtLogin" */,
+				CB090674BDE2A6D53921F5D6 /* XCLocalSwiftPackageReference "TrainBuddyKit" */,
 			);
 			productRefGroup = 51444B71274426AE00AD2C68 /* Products */;
 			projectDirPath = "";
@@ -306,6 +486,9 @@
 				51444B6F274426AE00AD2C68 /* Train Buddy */,
 				51444B80274426AF00AD2C68 /* Train BuddyTests */,
 				51444B8A274426AF00AD2C68 /* Train BuddyUITests */,
+				86336E513089F22500E43071 /* Train Buddy iOS */,
+				86336E603089F24C00E43071 /* TrainBuddyWidgetsExtension */,
+				86336E993089F59700E43071 /* Train Buddy iOSUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -315,7 +498,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-                AABB00000000000000000003 /* Localizable.strings in Resources */,
+				AABB00000000000000000003 /* Localizable.strings in Resources */,
 				51444B78274426AF00AD2C68 /* Assets.xcassets in Resources */,
 				51444BAD2744423300AD2C68 /* JourneyViewController.xib in Resources */,
 				51444BA9274438BE00AD2C68 /* ICEHeader.xib in Resources */,
@@ -334,6 +517,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		51444B89274426AF00AD2C68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86336E503089F22500E43071 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86336E5F3089F24C00E43071 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86336E983089F59700E43071 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -370,7 +574,7 @@
 			files = (
 				51F66F22274A600A0076A3F5 /* SharingMenuitem.swift in Sources */,
 				51444BA02744271400AD2C68 /* MenuBarController.swift in Sources */,
-                AABB00000000000000000007 /* APIDiagnosticsController.swift in Sources */,
+				AABB00000000000000000007 /* APIDiagnosticsController.swift in Sources */,
 				51444B74274426AE00AD2C68 /* AppDelegate.swift in Sources */,
 				51444BA8274438BE00AD2C68 /* ICEHeader.swift in Sources */,
 				51444BBF2745086000AD2C68 /* JourneyStopCustomViewController.swift in Sources */,
@@ -397,6 +601,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		86336E4E3089F22500E43071 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52D85DB706E2F9983E466426 /* TrainIntents.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86336E5D3089F24C00E43071 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9817B4457668552FA6AC5486 /* TrainIntents.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86336E963089F59700E43071 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -410,7 +637,30 @@
 			target = 51444B6F274426AE00AD2C68 /* Train Buddy */;
 			targetProxy = 51444B8C274426AF00AD2C68 /* PBXContainerItemProxy */;
 		};
+		86336E6F3089F24D00E43071 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 86336E603089F24C00E43071 /* TrainBuddyWidgetsExtension */;
+			targetProxy = 86336E6E3089F24D00E43071 /* PBXContainerItemProxy */;
+		};
+		DA88BAE1773DE89375178E41 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Train Buddy iOS";
+			target = 86336E513089F22500E43071 /* Train Buddy iOS */;
+			targetProxy = 4BDA46D4423AF7D06D3DE916 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AABB00000000000000000004 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AABB00000000000000000005 /* en */,
+				AABB00000000000000000006 /* de */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		51444B93274426AF00AD2C68 /* Debug */ = {
@@ -694,6 +944,283 @@
 			};
 			name = Release;
 		};
+		86336E5A3089F22500E43071 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_ENTITLEMENTS = "Train Buddy iOS/Train Buddy iOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 52U6XAJSSF;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Train-Buddy-iOS-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Train Buddy";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Train Buddy connects to your train’s onboard portal to show its journey and live travel information.";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = wtf.riedel.TrainBuddy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				XROS_DEPLOYMENT_TARGET = 27.0;
+			};
+			name = Debug;
+		};
+		86336E5B3089F22500E43071 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_ENTITLEMENTS = "Train Buddy iOS/Train Buddy iOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 52U6XAJSSF;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Train-Buddy-iOS-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Train Buddy";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Train Buddy connects to your train’s onboard portal to show its journey and live travel information.";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = wtf.riedel.TrainBuddy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				XROS_DEPLOYMENT_TARGET = 27.0;
+			};
+			name = Release;
+		};
+		86336E733089F24D00E43071 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_ENTITLEMENTS = TrainBuddyWidgetsExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 52U6XAJSSF;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TrainBuddyWidgets/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Train Buddy Widgets";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = wtf.riedel.TrainBuddy.TrainBuddyWidgets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				XROS_DEPLOYMENT_TARGET = 27.0;
+			};
+			name = Debug;
+		};
+		86336E743089F24D00E43071 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_ENTITLEMENTS = TrainBuddyWidgetsExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 52U6XAJSSF;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TrainBuddyWidgets/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Train Buddy Widgets";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = wtf.riedel.TrainBuddy.TrainBuddyWidgets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				XROS_DEPLOYMENT_TARGET = 27.0;
+			};
+			name = Release;
+		};
+		86336E9F3089F59700E43071 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 52U6XAJSSF;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "wtf.riedel.Train-Buddy-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Train Buddy iOS";
+				XROS_DEPLOYMENT_TARGET = 27.0;
+			};
+			name = Debug;
+		};
+		86336EA03089F59700E43071 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 52U6XAJSSF;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "wtf.riedel.Train-Buddy-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Train Buddy iOS";
+				XROS_DEPLOYMENT_TARGET = 27.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -733,7 +1260,41 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		86336E5C3089F22500E43071 /* Build configuration list for PBXNativeTarget "Train Buddy iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86336E5A3089F22500E43071 /* Debug */,
+				86336E5B3089F22500E43071 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86336E723089F24D00E43071 /* Build configuration list for PBXNativeTarget "TrainBuddyWidgetsExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86336E733089F24D00E43071 /* Debug */,
+				86336E743089F24D00E43071 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86336E9E3089F59700E43071 /* Build configuration list for PBXNativeTarget "Train Buddy iOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86336E9F3089F59700E43071 /* Debug */,
+				86336EA03089F59700E43071 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		CB090674BDE2A6D53921F5D6 /* XCLocalSwiftPackageReference "TrainBuddyKit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = TrainBuddyKit;
+		};
+/* End XCLocalSwiftPackageReference section */
 
 /* Begin XCRemoteSwiftPackageReference section */
 		51444BA1274429B900AD2C68 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
@@ -764,7 +1325,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-        AABB00000000000000000002 /* OnboardConnect */ = {isa = XCSwiftPackageProductDependency; productName = OnboardConnect; };
+		005E03FDB9677943830FB7E0 /* TrainBuddyKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB090674BDE2A6D53921F5D6 /* XCLocalSwiftPackageReference "TrainBuddyKit" */;
+			productName = TrainBuddyKit;
+		};
 		51444BA2274429B900AD2C68 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 51444BA1274429B900AD2C68 /* XCRemoteSwiftPackageReference "Alamofire" */;
@@ -779,6 +1344,10 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 51444BC127451D9800AD2C68 /* XCRemoteSwiftPackageReference "LaunchAtLogin" */;
 			productName = LaunchAtLogin;
+		};
+		AABB00000000000000000002 /* OnboardConnect */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = OnboardConnect;
 		};
 		B33E70A1287F2F15007C0D57 /* DBConnect */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -795,6 +1364,11 @@
 		B33E70A7287F2F15007C0D57 /* TrainConnect */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = TrainConnect;
+		};
+		FDC6BF857D3F80191781A257 /* TrainBuddyKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB090674BDE2A6D53921F5D6 /* XCLocalSwiftPackageReference "TrainBuddyKit" */;
+			productName = TrainBuddyKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
