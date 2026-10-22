@@ -38,3 +38,14 @@ Open GitHub issues were reviewed, including #5 (wrong submodule), #7 (alarm lang
 - Export only to a location explicitly chosen in NSSavePanel. The sandbox file entitlement permits writes to user-selected files for this action.
 - Preparing an email delegates to the system mail composer; the app has no sending backend. If composing is unavailable/fails, offer file export for webmail. The mailbox/alias itself is not provisioned by the source change.
 - Validation for this addition: 14 package tests (including synthetic credential/location/error redaction and bounded retention) and 2 app tests pass; the app builds. No real support email was sent. The mail-composer/export UI still needs a manual walkthrough.
+
+## iOS, widgets and Live Activities
+
+- Add an iOS 26+ iPhone/iPad target and shared scheme alongside the existing Mac app. Reuse all five onboard providers and train artwork, with the full journey, vehicle series, platform changes, speed where reported, and small/past delays preserved.
+- Add small/medium Home Screen widgets and a rectangular Lock Screen widget. Refresh buttons in widgets, Live Activities and the app perform a new onboard request; simultaneous actions coalesce while a request is in flight.
+- Add Lock Screen and Dynamic Island presentations, stale/error labels, and a Control Center button that starts or updates one Live Activity through `LiveActivityIntent` without opening the app. Expose start/refresh as App Shortcuts as well.
+- Share Codable/Sendable snapshots through atomic App Group files. Preserve the last successful data and original fetch time after failure, clear demo data when switching mode, and mark data outdated after 60 seconds. Bound UTF-8 fields in the ActivityKit state; exclude the full stop list and PNG artwork from its payload.
+- Keep the refresh service and activity lifecycle in `TrainBuddyKit`. Compile thin intent entry points directly into both application bundles to avoid imported-package metadata resolution failures observed on iOS 26.5.
+- Refresh automatically every 30 seconds in the foreground. Suspended background execution has no continuous polling guarantee; users can refresh from system surfaces. No push server or App Store submission is included.
+- Include the diagnostic preview, email draft and share-sheet fallback on iOS. App Group provisioning is required for both new bundle IDs before installing a signed device/TestFlight build. Actual train Wi-Fi validation is still required before release.
+- Validation: three shared-data Swift tests, three iOS UI scenarios (including Control Center cold start after app termination and Lock Screen refresh without opening the app), and the two existing macOS app tests pass. iOS Simulator Debug and unsigned device Release builds succeed. The iOS UI was exercised on an isolated iOS 26.5 simulator; physical-device/onboard-Wi-Fi and App Store distribution checks remain outstanding.
