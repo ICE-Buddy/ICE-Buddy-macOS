@@ -30,3 +30,15 @@
 "Train" = "Train";
 "Cancelled" = "Cancelled";
 "Platform %@" = "Platform %@";
+
+"Report API problem…" = "Report API problem…";
+"API diagnostics" = "API diagnostics";
+"Review the report before sharing it with %@. It contains recent technical API results and app/system versions, without locations, Wi-Fi identifiers or response contents. Failed probes for other train operators are normal." = "Review the report before sharing it with %@. It contains recent technical API results and app/system versions, without locations, Wi-Fi identifiers or response contents. Failed probes for other train operators are normal.";
+"Prepare email" = "Prepare email";
+"Save report…" = "Save report…";
+"Cancel" = "Cancel";
+"Please describe what happened and which train operator you were travelling with:" = "Please describe what happened and which train operator you were travelling with:";
+"The diagnostic report could not be saved." = "The diagnostic report could not be saved.";
+"Choose another location and try again." = "Choose another location and try again.";
+"Email could not be prepared" = "Email could not be prepared";
+"Save the report and attach it to an email to %@, for example in webmail. Nothing has been sent." = "Save the report and attach it to an email to %@, for example in webmail. Nothing has been sent.";

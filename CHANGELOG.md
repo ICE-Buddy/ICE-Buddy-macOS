@@ -29,3 +29,12 @@ Open GitHub issues were reviewed, including #5 (wrong submodule), #7 (alarm lang
 - The macOS Debug build and app-hosted tests pass. The test app launches on the host Mac; native Computer Use could not inspect the menu-only app, so a complete visual walkthrough is unverified.
 - New onboard adapters were validated against bundled, attributed response samples, not live train Wi-Fi. Confirm them during actual journeys before publishing an App Store build.
 - The installed Xcode requires at least macOS 12 for the app target; minimum deployment was raised from 11 to 12. No App Store submission is performed by these source changes.
+
+## API support reports
+
+- Add “Report API problem…” to connected and disconnected menus, with English/German preview, email-draft and JSON-export actions for trainbuddy@riedel.wtf.
+- Keep at most 40 request outcomes from the last 15 minutes in memory. Capture static endpoint labels, timing, HTTP status/size and safe decoding/network categories; never retain raw bodies, arbitrary URLs, headers or localized error descriptions.
+- Cover transport, decoding and semantic adapter failures. Redact dynamic dictionary keys; failed probes for other operators are explained in the preview/report.
+- Export only to a location explicitly chosen in NSSavePanel. The sandbox file entitlement permits writes to user-selected files for this action.
+- Preparing an email delegates to the system mail composer; the app has no sending backend. If composing is unavailable/fails, offer file export for webmail. The mailbox/alias itself is not provisioned by the source change.
+- Validation for this addition: 14 package tests (including synthetic credential/location/error redaction and bounded retention) and 2 app tests pass; the app builds. No real support email was sent. The mail-composer/export UI still needs a manual walkthrough.

@@ -30,3 +30,15 @@
 "Train" = "Zug";
 "Cancelled" = "Halt entfällt";
 "Platform %@" = "Gleis %@";
+
+"Report API problem…" = "API-Problem melden…";
+"API diagnostics" = "API-Diagnose";
+"Review the report before sharing it with %@. It contains recent technical API results and app/system versions, without locations, Wi-Fi identifiers or response contents. Failed probes for other train operators are normal." = "Prüfe den Bericht, bevor du ihn an %@ weitergibst. Er enthält aktuelle technische API-Ergebnisse und App-/Systemversionen, ohne Standorte, WLAN-Kennungen oder Antwortinhalte. Fehlgeschlagene Abfragen anderer Zugbetreiber sind normal.";
+"Prepare email" = "E-Mail vorbereiten";
+"Save report…" = "Bericht speichern…";
+"Cancel" = "Abbrechen";
+"Please describe what happened and which train operator you were travelling with:" = "Bitte beschreibe, was passiert ist und mit welchem Zugbetreiber du unterwegs warst:";
+"The diagnostic report could not be saved." = "Der Diagnosebericht konnte nicht gespeichert werden.";
+"Choose another location and try again." = "Wähle einen anderen Speicherort und versuche es erneut.";
+"Email could not be prepared" = "E-Mail konnte nicht vorbereitet werden";
+"Save the report and attach it to an email to %@, for example in webmail. Nothing has been sent." = "Speichere den Bericht und hänge ihn an eine E-Mail an %@ an, zum Beispiel im Webmail. Es wurde nichts versendet.";

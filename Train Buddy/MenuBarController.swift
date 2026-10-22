@@ -52,6 +52,10 @@ class MenuBarController: NSObject {
     let internetQualityMenuitem = NSMenuItem(title: "Internet Quality: –".localized, action: nil, keyEquivalent: "")
 
     
+    private let diagnosticsController = APIDiagnosticsController()
+    let reportAPIProblemMenuItem = NSMenuItem(title: "Report API problem…".localized, action: nil, keyEquivalent: "")
+    let disconnectedReportAPIProblemMenuItem = NSMenuItem(title: "Report API problem…".localized, action: nil, keyEquivalent: "")
+
     let aboutMenuItem = NSMenuItem(title: "About".localized, action: nil, keyEquivalent: "")
     let launchAtLoginMenuItem = NSMenuItem(title: "Launch at Login".localized, action: nil, keyEquivalent: "")
     let twitterMenuItem = NSMenuItem(title: "Questions? → Hit me up on Twitter!".localized, action: nil, keyEquivalent: "")
@@ -305,6 +309,9 @@ class MenuBarController: NSObject {
         twitterMenuItem.action = #selector(hmuTwitter)
         twitterMenuItem.target = self
         
+        reportAPIProblemMenuItem.action = #selector(reportAPIProblem)
+        reportAPIProblemMenuItem.target = self
+
         aboutMenuItem.action = #selector(showAbout)
         aboutMenuItem.target = self
         
@@ -383,6 +390,7 @@ class MenuBarController: NSObject {
         self.menu.addItem(iceBuddyHeaderMenuItem)
         self.menu.addItem(lastUpdateMenuitem)
         self.menu.addItem(NSMenuItem.separator())
+        self.menu.addItem(reportAPIProblemMenuItem)
         self.menu.addItem(aboutMenuItem)
         self.menu.addItem(shareICEBuddy)
         self.menu.addItem(launchAtLoginMenuItem)
@@ -435,6 +443,9 @@ class MenuBarController: NSObject {
         disconnectedTwitterMenuItem.action = #selector(hmuTwitter)
         disconnectedTwitterMenuItem.target = self
         
+        disconnectedReportAPIProblemMenuItem.action = #selector(reportAPIProblem)
+        disconnectedReportAPIProblemMenuItem.target = self
+
         disconnectedAboutMenuItem.action = #selector(showAbout)
         disconnectedAboutMenuItem.target = self
         
@@ -445,6 +456,7 @@ class MenuBarController: NSObject {
         disconnectedMenu.delegate = self
         disconnectedMenu.addItem(disconnectedMenuItem)
         self.disconnectedMenu.addItem(NSMenuItem.separator())
+        self.disconnectedMenu.addItem(disconnectedReportAPIProblemMenuItem)
         self.disconnectedMenu.addItem(disconnectedAboutMenuItem)
         self.disconnectedMenu.addItem(disconnectedLaunchAtLoginMenuItem)
         self.disconnectedMenu.addItem(disconnectedTwitterMenuItem)
@@ -455,6 +467,10 @@ class MenuBarController: NSObject {
     
     
     
+    @objc func reportAPIProblem() {
+        diagnosticsController.showReport()
+    }
+
     @objc func showAbout() {
         let aboutVC = AboutViewController()
         let window = NSWindow(contentViewController: aboutVC)
